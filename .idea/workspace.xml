@@ -9,7 +9,25 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b13391db-ee48-41a5-9aa9-aca91d7c7667" name="Default Changelist" comment="" />
+    <list default="true" id="b13391db-ee48-41a5-9aa9-aca91d7c7667" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/controller/DependentManagement/DependentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/controller/InformationManagement/InformationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/controller/InformationManagement/NotificationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/controller/MovementTracementManagement/CheckinCheckOutController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/controller/QuarantineCenterManagement/CenterController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/controller/QuarantineRecordManagement/QuarantineRecordController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/view/CenterView/QuarantineCenterList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/view/DependentView/DependentProfile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/view/DependentView/DependentRegister.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/view/InformationView/Covid19Information.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/view/MovementView/CheckinMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/view/QuarantineRecordView/AddTestResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/view/RegistrationView/VisitorLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/controller/ProfileRegistration/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/controller/RegistrationManagement/RegistrationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/controller/Vaccination/VaccinationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/controller/VaccineManagement/VaccineController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/view/ResgistrationView/VisitorRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/view/RegistrationView/VisitorRegister.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
