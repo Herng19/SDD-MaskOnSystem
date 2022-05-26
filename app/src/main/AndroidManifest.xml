@@ -8,12 +8,60 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+<<<<<<< Updated upstream
         android:theme="@style/Theme.Maskon" >
+=======
+        android:theme="@style/Theme.Maskon">
+        <activity
+            android:name=".MovementHistory"
+            android:exported="false" />
+        <activity
+            android:name=".view.VaccineView.VaccineView"
+            android:exported="true" />
+>>>>>>> Stashed changes
         <activity
             android:name=".view.VaccineView.VaccineRegistration"
             android:exported="false"
             android:label="@string/title_activity_vaccine_registration" />
         <activity
+<<<<<<< Updated upstream
+=======
+            android:name=".view.VaccineView.VaccineInformation"
+            android:exported="true" />
+        <activity
+            android:name=".view.VaccineView.VaccineDependent"
+            android:exported="true" />
+        <activity
+            android:name=".view.VaccineView.VaccineCertificate"
+            android:exported="true" />
+        <activity
+            android:name=".view.RegistrationView.VisitorLogin"
+            android:exported="true" />
+        <activity
+            android:name=".view.RegistrationView.VisitorRegister"
+            android:exported="true" />
+        <activity
+            android:name=".view.CenterView.QuarantineCenterList"
+            android:exported="true" />
+        <activity
+            android:name=".view.DependentView.DependentRegister"
+            android:exported="true" />
+        <activity
+            android:name=".view.DependentView.DependentProfile"
+            android:exported="true" />
+        <activity
+            android:name=".view.InformationView.Covid19Information"
+            android:exported="true" />
+        <activity
+            android:name=".view.MovementView.CheckInMenu"
+            android:exported="true"
+            android:label="CheckinMenu" />
+        <activity
+            android:name=".view.QuarantineRecordView.AddTestResults"
+            android:exported="true"
+            android:label="@string/title_activity_add_test_results" />
+        <activity
+>>>>>>> Stashed changes
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name" >
@@ -23,6 +71,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
