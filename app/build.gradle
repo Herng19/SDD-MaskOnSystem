@@ -28,6 +28,13 @@ android {
     buildFeatures {
         viewBinding true
     }
+    sourceSets {
+        main {
+            res {
+                srcDirs 'src\\main\\res', 'src\\main\\res\\layouts\\registration', 'src\\main\\res\\layouts\\movement', 'src\\main\\res\\layouts\\vaccine', 'src\\main\\res\\layouts\\QuarantineRecord', 'src\\main\\res\\layouts\\information', 'src\\main\\res\\layouts\\QuarantineCenter', 'src\\main\\res\\layouts\\dependent'
+            }
+        }
+    }
 }
 
 dependencies {

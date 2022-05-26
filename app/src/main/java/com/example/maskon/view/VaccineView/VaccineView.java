@@ -1,4 +1,14 @@
 package com.example.maskon.view.VaccineView;
 
-public class VaccineView {
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+
+public class VaccineView extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_vaccine_view);
+    }
 }

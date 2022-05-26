@@ -1,14 +1,16 @@
-package com.example.maskon.view.VaccineView;
+package com.example.maskon.view.QuarantineRecordView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class VaccineInformation extends AppCompatActivity {
+import com.example.maskon.R;
+
+public class AddTestResults extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_vaccine_information);
+        setContentView(R.layout.activity_add_test_results);
     }
 }

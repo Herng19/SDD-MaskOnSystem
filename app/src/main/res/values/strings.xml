@@ -4,4 +4,5 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="title_activity_vaccine_registration">VaccineRegistration</string>
+    <string name="title_activity_add_test_results">AddTestResults</string>
 </resources>

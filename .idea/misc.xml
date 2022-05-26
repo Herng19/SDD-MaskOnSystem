@@ -4,6 +4,21 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/SDW2/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/Misha/AndroidStudioProjects/SDD-MaskOnSystem/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Misha/AndroidStudioProjects/SDD-MaskOnSystem/app/src/main/res/layout/activity_visitior_register.xml" value="0.18645833333333334" />
+        <entry key="..\:/Users/Misha/AndroidStudioProjects/SDD-MaskOnSystem/app/src/main/res/layouts/QuarantineCenter/layout/activity_quarantine_center_list.xml" value="0.1" />
+        <entry key="..\:/Users/Misha/AndroidStudioProjects/SDD-MaskOnSystem/app/src/main/res/layouts/QuarantineRecord/layout/activity_add_test_results.xml" value="0.1" />
+        <entry key="..\:/Users/Misha/AndroidStudioProjects/SDD-MaskOnSystem/app/src/main/res/layouts/dependent/layout/activity_dependent_profile.xml" value="0.1" />
+        <entry key="..\:/Users/Misha/AndroidStudioProjects/SDD-MaskOnSystem/app/src/main/res/layouts/dependent/layout/activity_dependent_register.xml" value="0.1" />
+        <entry key="..\:/Users/Misha/AndroidStudioProjects/SDD-MaskOnSystem/app/src/main/res/layouts/information/layout/activity_covid19_information.xml" value="0.1" />
+        <entry key="..\:/Users/Misha/AndroidStudioProjects/SDD-MaskOnSystem/app/src/main/res/layouts/movement/layout/activity_checkin_menu.xml" value="0.1" />
+        <entry key="..\:/Users/Misha/AndroidStudioProjects/SDD-MaskOnSystem/app/src/main/res/layouts/registration/layout/activity_visitor_login.xml" value="0.1" />
+        <entry key="..\:/Users/Misha/AndroidStudioProjects/SDD-MaskOnSystem/app/src/main/res/layouts/registration/layout/activity_visitor_register.xml" value="0.1" />
+        <entry key="..\:/Users/Misha/AndroidStudioProjects/SDD-MaskOnSystem/app/src/main/res/layouts/vaccine/layout/activity_vaccine_certificate.xml" value="0.1" />
+        <entry key="..\:/Users/Misha/AndroidStudioProjects/SDD-MaskOnSystem/app/src/main/res/layouts/vaccine/layout/activity_vaccine_dependent.xml" value="0.1" />
+        <entry key="..\:/Users/Misha/AndroidStudioProjects/SDD-MaskOnSystem/app/src/main/res/layouts/vaccine/layout/activity_vaccine_information.xml" value="0.1" />
+        <entry key="..\:/Users/Misha/AndroidStudioProjects/SDD-MaskOnSystem/app/src/main/res/layouts/vaccine/layout/activity_vaccine_registration.xml" value="0.1" />
+        <entry key="..\:/Users/Misha/AndroidStudioProjects/SDD-MaskOnSystem/app/src/main/res/layouts/vaccine/layout/activity_vaccine_view.xml" value="0.1" />
       </map>
     </option>
   </component>
