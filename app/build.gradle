@@ -31,7 +31,7 @@ android {
     sourceSets {
         main {
             res {
-                srcDirs 'src\\main\\res', 'src\\main\\res\\layouts\\registration', 'src\\main\\res\\layouts\\movement', 'src\\main\\res\\layouts\\vaccine', 'src\\main\\res\\layouts\\QuarantineRecord', 'src\\main\\res\\layouts\\information', 'src\\main\\res\\layouts\\QuarantineCenter', 'src\\main\\res\\layouts\\dependent'
+                srcDirs 'src\\main\\res', 'src\\main\\res\\layouts\\registration', 'src\\main\\res\\layouts\\movement', 'src\\main\\res\\layouts\\vaccine', 'src\\main\\res\\layouts\\QuarantineRecord', 'src\\main\\res\\layouts\\information', 'src\\main\\res\\layouts\\QuarantineCenter', 'src\\main\\res\\layouts\\dependent', 'src\\main\\res\\layouts\\CenterView\\layout', 'src\\main\\res\\layouts\\CenteView', 'src\\main\\res\\layouts\\CenterView', 'src\\main\\res\\layouts\\LoginView'
             }
         }
     }

@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Maskon">
         <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".view.CenterView.CenterList"
+            android:exported="true" />
+        <activity
             android:name=".view.VaccineView.VaccineView"
             android:exported="true" />
         <activity
@@ -32,9 +38,6 @@
             android:name=".view.RegistrationView.VisitorRegister"
             android:exported="true" />
         <activity
-            android:name=".view.CenterView.QuarantineCenterList"
-            android:exported="true" />
-        <activity
             android:name=".view.DependentView.DependentRegister"
             android:exported="true" />
         <activity
@@ -46,13 +49,13 @@
         <activity
             android:name=".view.MovementView.CheckinMenu"
             android:exported="true"
-            android:label="CheckinMenu"/>
+            android:label="CheckinMenu" />
         <activity
             android:name=".view.QuarantineRecordView.AddTestResults"
             android:exported="true"
             android:label="@string/title_activity_add_test_results" />
         <activity
-            android:name=".MainActivity"
+            android:name=".view.CenterView.AddNewCenter"
             android:exported="true"
             android:label="@string/app_name">
             <intent-filter>

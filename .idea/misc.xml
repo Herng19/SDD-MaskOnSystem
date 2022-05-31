@@ -3,22 +3,20 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/MaskOn/app/src/main/res/drawable/border_btn.xml" value="0.279" />
+        <entry key="..\:/MaskOn/app/src/main/res/drawable/table_border_radius.xml" value="0.279" />
+        <entry key="..\:/MaskOn/app/src/main/res/layout/CenterView/quarantine_center_list.xml" value="0.26268115942028986" />
+        <entry key="..\:/MaskOn/app/src/main/res/layout/activity_main.xml" value="0.176" />
+        <entry key="..\:/MaskOn/app/src/main/res/layout/center_information.xml" value="0.26268115942028986" />
+        <entry key="..\:/MaskOn/app/src/main/res/layout/fragment_dashboard.xml" value="0.144" />
+        <entry key="..\:/MaskOn/app/src/main/res/layout/fragment_home.xml" value="0.10389055151774262" />
+        <entry key="..\:/MaskOn/app/src/main/res/layout/fragment_notifications.xml" value="0.10389055151774262" />
+        <entry key="..\:/MaskOn/app/src/main/res/layout/quarantine_center_list.xml" value="0.264" />
+        <entry key="..\:/MaskOn/app/src/main/res/layouts/CenterView/layout/activity_add_new_center.xml" value="0.264" />
+        <entry key="..\:/MaskOn/app/src/main/res/layouts/CenterView/layout/activity_center_list.xml" value="0.12213740458015267" />
+        <entry key="..\:/MaskOn/app/src/main/res/layouts/CenterView/layout/center_information.xml" value="0.2" />
+        <entry key="..\:/MaskOn/app/src/main/res/layouts/CenterView/layout/quarantine_center_list.xml" value="0.1" />
         <entry key="..\:/SDW2/app/src/main/res/layout/activity_main.xml" value="0.22" />
-        <entry key="..\:/Users/Misha/AndroidStudioProjects/SDD-MaskOnSystem/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/Users/Misha/AndroidStudioProjects/SDD-MaskOnSystem/app/src/main/res/layout/activity_visitior_register.xml" value="0.18645833333333334" />
-        <entry key="..\:/Users/Misha/AndroidStudioProjects/SDD-MaskOnSystem/app/src/main/res/layouts/QuarantineCenter/layout/activity_quarantine_center_list.xml" value="0.1" />
-        <entry key="..\:/Users/Misha/AndroidStudioProjects/SDD-MaskOnSystem/app/src/main/res/layouts/QuarantineRecord/layout/activity_add_test_results.xml" value="0.3333333333333333" />
-        <entry key="..\:/Users/Misha/AndroidStudioProjects/SDD-MaskOnSystem/app/src/main/res/layouts/dependent/layout/activity_dependent_profile.xml" value="0.1" />
-        <entry key="..\:/Users/Misha/AndroidStudioProjects/SDD-MaskOnSystem/app/src/main/res/layouts/dependent/layout/activity_dependent_register.xml" value="0.1" />
-        <entry key="..\:/Users/Misha/AndroidStudioProjects/SDD-MaskOnSystem/app/src/main/res/layouts/information/layout/activity_covid19_information.xml" value="0.1" />
-        <entry key="..\:/Users/Misha/AndroidStudioProjects/SDD-MaskOnSystem/app/src/main/res/layouts/movement/layout/activity_checkin_menu.xml" value="0.1" />
-        <entry key="..\:/Users/Misha/AndroidStudioProjects/SDD-MaskOnSystem/app/src/main/res/layouts/registration/layout/activity_visitor_login.xml" value="0.1" />
-        <entry key="..\:/Users/Misha/AndroidStudioProjects/SDD-MaskOnSystem/app/src/main/res/layouts/registration/layout/activity_visitor_register.xml" value="0.1" />
-        <entry key="..\:/Users/Misha/AndroidStudioProjects/SDD-MaskOnSystem/app/src/main/res/layouts/vaccine/layout/activity_vaccine_certificate.xml" value="0.1" />
-        <entry key="..\:/Users/Misha/AndroidStudioProjects/SDD-MaskOnSystem/app/src/main/res/layouts/vaccine/layout/activity_vaccine_dependent.xml" value="0.1" />
-        <entry key="..\:/Users/Misha/AndroidStudioProjects/SDD-MaskOnSystem/app/src/main/res/layouts/vaccine/layout/activity_vaccine_information.xml" value="0.1" />
-        <entry key="..\:/Users/Misha/AndroidStudioProjects/SDD-MaskOnSystem/app/src/main/res/layouts/vaccine/layout/activity_vaccine_registration.xml" value="0.1" />
-        <entry key="..\:/Users/Misha/AndroidStudioProjects/SDD-MaskOnSystem/app/src/main/res/layouts/vaccine/layout/activity_vaccine_view.xml" value="0.1" />
       </map>
     </option>
   </component>
