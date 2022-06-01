@@ -18,6 +18,7 @@
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="bold"
+        android:layout_marginTop="20dp"
         app:layout_constraintBottom_toTopOf="@+id/search"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
@@ -26,10 +27,9 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/search"
-        android:layout_width="409dp"
+        android:layout_width="match_parent"
         android:layout_height="56dp"
         android:textColorHint="#FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/scrollView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/quarantineCenterList">
@@ -46,215 +46,23 @@
             android:paddingStart="15dp" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <ScrollView
-        android:id="@+id/scrollView"
-        android:layout_width="0dp"
-        android:layout_height="400dp"
-        android:layout_marginBottom="124dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/centerName1"
-                    android:layout_width="250dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="20dp"
-                    android:gravity="center"
-                    android:text="MAEPS Serdang"
-                    android:textAllCaps="true"
-                    android:textColor="#FFFFFF"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/viewBtn1"
-                    android:layout_width="100dp"
-                    android:layout_height="50dp"
-                    android:layout_gravity="center"
-                    android:padding="0dp"
-                    android:text="VIEW"
-                    app:backgroundTint="@color/primary"
-                    app:cornerRadius="6dp"
-                    app:strokeColor="#FFFFFF"
-                    app:strokeWidth="2dp"
-                    tools:ignore="DuplicateSpeakableTextCheck" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/centerName2"
-                    android:layout_width="250dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="20dp"
-                    android:gravity="center"
-                    android:text="MAEPS Serdang"
-                    android:textAllCaps="true"
-                    android:textColor="#FFFFFF"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/viewBtn2"
-                    android:layout_width="100dp"
-                    android:layout_height="50dp"
-                    android:layout_gravity="center"
-                    android:padding="0dp"
-                    android:text="VIEW"
-                    app:backgroundTint="@color/primary"
-                    app:cornerRadius="6dp"
-                    app:strokeColor="#FFFFFF"
-                    app:strokeWidth="2dp" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/centerName3"
-                    android:layout_width="250dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="20dp"
-                    android:gravity="center"
-                    android:text="MAEPS Serdang"
-                    android:textAllCaps="true"
-                    android:textColor="#FFFFFF"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/viewBtn3"
-                    android:layout_width="100dp"
-                    android:layout_height="50dp"
-                    android:layout_gravity="center"
-                    android:padding="0dp"
-                    android:text="VIEW"
-                    app:backgroundTint="@color/primary"
-                    app:cornerRadius="6dp"
-                    app:strokeColor="#FFFFFF"
-                    app:strokeWidth="2dp" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/centerName4"
-                    android:layout_width="250dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="20dp"
-                    android:gravity="center"
-                    android:text="MAEPS Serdang"
-                    android:textAllCaps="true"
-                    android:textColor="#FFFFFF"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/viewBtn4"
-                    android:layout_width="100dp"
-                    android:layout_height="50dp"
-                    android:layout_gravity="center"
-                    android:padding="0dp"
-                    android:text="VIEW"
-                    app:backgroundTint="@color/primary"
-                    app:cornerRadius="6dp"
-                    app:strokeColor="#FFFFFF"
-                    app:strokeWidth="2dp" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/centerName5"
-                    android:layout_width="250dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="20dp"
-                    android:gravity="center"
-                    android:text="MAEPS Serdang"
-                    android:textAllCaps="true"
-                    android:textColor="#FFFFFF"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/viewBtn5"
-                    android:layout_width="100dp"
-                    android:layout_height="50dp"
-                    android:layout_gravity="center"
-                    android:padding="0dp"
-                    android:text="VIEW"
-                    app:backgroundTint="@color/primary"
-                    app:cornerRadius="6dp"
-                    app:strokeColor="#FFFFFF"
-                    app:strokeWidth="2dp" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/centerName6"
-                    android:layout_width="250dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="20dp"
-                    android:gravity="center"
-                    android:text="MAEPS Serdang"
-                    android:textAllCaps="true"
-                    android:textColor="#FFFFFF"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/viewBtn6"
-                    android:layout_width="100dp"
-                    android:layout_height="50dp"
-                    android:layout_gravity="center"
-                    android:padding="0dp"
-                    android:text="VIEW"
-                    app:backgroundTint="@color/primary"
-                    app:cornerRadius="6dp"
-                    app:strokeColor="#FFFFFF"
-                    app:strokeWidth="2dp" />
-
-            </LinearLayout>
-        </LinearLayout>
-    </ScrollView>
+    </androidx.recyclerview.widget.RecyclerView>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/addNewCenterBtn"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_gravity="center"
+        android:layout_marginBottom="24dp"
         android:padding="0dp"
         android:text="+"
         android:textColor="@color/primary"
@@ -263,10 +71,8 @@
         app:cornerRadius="60dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.906"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scrollView"
-        app:layout_constraintVertical_bias="0.567" />
+        app:layout_constraintHorizontal_bias="0.928"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

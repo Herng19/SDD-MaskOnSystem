@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="2dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="10dp"
+    app:cardBackgroundColor="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/centerInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="10dp">
+
+            <ImageView
+                android:id="@+id/viewCenterImage"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="0.40"
+                android:contentDescription="centerImage"
+                android:src="@drawable/ic_launcher_background" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_weight="0.70"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/viewCenterName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/centerName"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/viewCenterAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/centerAdd"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/viewCenterPIC"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/centerPIC"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/viewCenterPhoneNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/centerPhoneNum"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/viewCenterEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/centerEmail"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/viewCenterCurrCap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/centerCurrCap"
+                    android:textColor="@color/black"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="end"
+            app:layout_constraintTop_toBottomOf="@id/centerInfo">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/deleteBtn"
+                android:layout_width="80dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="5dp"
+                android:padding="0dp"
+                android:text="DELETE"
+                android:textSize="12sp"
+                app:backgroundTint="#FF0000"
+                app:cornerRadius="6dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/updateBtn"
+                android:layout_width="80dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp"
+                android:padding="0dp"
+                android:text="UPDATE"
+                android:textSize="12sp"
+                android:textColor="@color/primary"
+                app:backgroundTint="@color/white"
+                app:cornerRadius="6dp"
+                app:strokeColor="@color/primary"
+                app:strokeWidth="2dp" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

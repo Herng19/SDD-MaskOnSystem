@@ -5,4 +5,10 @@
     <string name="title_notifications">Notifications</string>
     <string name="title_activity_vaccine_registration">VaccineRegistration</string>
     <string name="title_activity_add_test_results">AddTestResults</string>
+    <string name="centerCurrCap">centerCurrCap</string>
+    <string name="centerMaxCap">centerMaxCap</string>
+    <string name="centerEmail">centerEmail</string>
+    <string name="centerPhoneNum">centerPhoneNum</string>
+    <string name="centerPIC">centerPIC</string>
+    <string name="centerAdd">centerAddress</string>
 </resources>
