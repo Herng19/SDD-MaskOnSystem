@@ -4,9 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-<<<<<<< HEAD
-    tools:context=".view.MovementView.CheckinMenu">
-=======
     android:background="#1073B6"
     tools:context=".view.MovementView.CheckInMenu">
 
@@ -190,7 +187,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/maskon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="7dp"
@@ -211,11 +208,9 @@
         android:layout_marginStart="320dp"
         android:layout_marginTop="28dp"
         android:background="#00FFFFFF"
-        android:text="Home"
         android:textSize="20sp"
         app:icon="@drawable/ic_home_black_24dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
->>>>>>> origin/atiqah
 
 </androidx.constraintlayout.widget.ConstraintLayout>
