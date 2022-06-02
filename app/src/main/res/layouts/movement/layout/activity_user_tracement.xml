@@ -40,7 +40,7 @@
         android:layout_marginStart="148dp"
         android:layout_marginTop="196dp"
         android:layout_marginEnd="169dp"
-        android:background="@drawable/btn_checkin"
+        android:background="@drawable/btn_bg"
         android:backgroundTint="#FFFDFD"
         android:text="Checked-in"
         android:textAllCaps="true"

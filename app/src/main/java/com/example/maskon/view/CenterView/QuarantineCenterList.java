@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import com.example.maskon.R;
+
 public class QuarantineCenterList extends AppCompatActivity {
 
     @Override

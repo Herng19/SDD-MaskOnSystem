@@ -5,9 +5,6 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Maskon.iml" filepath="$PROJECT_DIR$/.idea/modules/Maskon.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Maskon.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Maskon.app.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/SDD-MaskOnSystem.Maskon.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/SDD-MaskOnSystem.Maskon.app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/SDD-MaskOnSystem.Maskon.app.androidTest~1.iml" filepath="$PROJECT_DIR$/.idea/modules/app/SDD-MaskOnSystem.Maskon.app.androidTest~1.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/SDD-MaskOnSystem.Maskon.app.main~1.iml" filepath="$PROJECT_DIR$/.idea/modules/app/SDD-MaskOnSystem.Maskon.app.main~1.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/SDD-MaskOnSystem.Maskon.app.unitTest~1.iml" filepath="$PROJECT_DIR$/.idea/modules/app/SDD-MaskOnSystem.Maskon.app.unitTest~1.iml" />
     </modules>
   </component>
 </project>
