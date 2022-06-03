@@ -25,6 +25,7 @@ import com.example.maskon.model.DBMain;
 
 import java.util.ArrayList;
 
+//class to display card in recycler view
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
     Context context;
     int singleData;
@@ -32,6 +33,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
     SQLiteDatabase sqLiteDatabase;
     boolean isUser;
 
+    //constructor for adapter class
     public MyAdapter(Context context, int singleData, ArrayList<CenterRecord> centerRecordArrayList, SQLiteDatabase sqLiteDatabase, boolean isUser) {
         this.context = context;
         this.singleData = singleData;
@@ -40,6 +42,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         this.isUser=isUser;
     }
 
+    //function to let each card view to display in recycler view
     @NonNull
     @Override
     public MyAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -48,6 +51,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         return new ViewHolder(view);
     }
 
+    //function to set data to each card according to data entered
     @Override
     public void onBindViewHolder(@NonNull MyAdapter.ViewHolder holder, int position) {
         final CenterRecord centerRecord= centerRecordArrayList.get(position);
@@ -66,22 +70,24 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
             holder.updateBtn.setVisibility(View.GONE);
             holder.deleteBtn.setVisibility(View.GONE);
         }else {
+            //set onclick function for delete button in each card view
             holder.deleteBtn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    DBMain dbMain = new DBMain(context);
-                    sqLiteDatabase = dbMain.getReadableDatabase();
-                    long delete = sqLiteDatabase.delete(TABLENAME, "Center_ID=" + centerRecord.getCenter_ID(), null);
-                    if (delete != -1) {
+                    try{
+                    centerRecord.setContext(context);
+                    centerRecord.deleteCenter(centerRecord.getCenter_ID());
                         Toast.makeText(context, "Center Deleted", Toast.LENGTH_SHORT).show();
                         centerRecordArrayList.remove(holder.getAdapterPosition());
                         notifyDataSetChanged();
-                    } else {
-                        Toast.makeText(context, "Center Not Deleted, Something Wrong", Toast.LENGTH_SHORT).show();
+                    }catch (Exception e)
+                    {
+                        Toast.makeText(context, "Center Not Deleted, " + e, Toast.LENGTH_SHORT).show();
                     }
                 }
             });
 
+            //set onclick function for update button in each card view
             holder.updateBtn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -104,11 +110,13 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         }
     }
 
+    //function to get total number of center to display
     @Override
     public int getItemCount() {
         return centerRecordArrayList.size();
     }
 
+    //find each text view and assign to variable
     public class ViewHolder extends RecyclerView.ViewHolder {
         ImageView centerImage;
         TextView txtCenterName, txtCenterAddress, txtCenterPIC, txtCenterPhoneNum, txtCenterEmail, txtCenterMaxCap, txtCenterCurrCap;

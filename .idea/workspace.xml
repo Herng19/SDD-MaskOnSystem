@@ -15,24 +15,15 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b13391db-ee48-41a5-9aa9-aca91d7c7667" name="Default Changelist" comment="add update function">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/view/CenterView/QuarantineCenterList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layouts/CenterView/layout/activity_quarantine_center_list.xml" afterDir="false" />
+    <list default="true" id="b13391db-ee48-41a5-9aa9-aca91d7c7667" name="Default Changelist" comment="add user view for center list">
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Maskon.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Maskon.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/app/Maskon.app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/Maskon.app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/controller/QuarantineCenterManagement/CenterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/controller/QuarantineCenterManagement/CenterController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/model/CenterRecord/CenterRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/model/CenterRecord/CenterRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/model/DBMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/model/DBMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/view/CenterView/AddNewCenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/view/CenterView/AddNewCenter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/view/CenterView/CenterList.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/view/CenterView/CenterList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/view/CenterView/MyAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/view/CenterView/MyAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layouts/CenterView/layout/activity_add_new_center.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layouts/CenterView/layout/activity_add_new_center.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layouts/CenterView/layout/activity_center_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layouts/CenterView/layout/activity_center_list.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/view/CenterView/QuarantineCenterList.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/view/CenterView/QuarantineCenterList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -259,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654107464461</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add user view for center list">
+      <created>1654242942839</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1654242942839</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -280,6 +278,7 @@
     <MESSAGE value="add insert data function" />
     <MESSAGE value="add image input" />
     <MESSAGE value="add update function" />
-    <option name="LAST_COMMIT_MESSAGE" value="add update function" />
+    <MESSAGE value="add user view for center list" />
+    <option name="LAST_COMMIT_MESSAGE" value="add user view for center list" />
   </component>
 </project>

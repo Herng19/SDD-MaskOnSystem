@@ -1,13 +1,34 @@
 package com.example.maskon.model.CenterRecord;
 
 
+import static com.example.maskon.model.DBMain.TABLENAME;
+
+import android.content.ContentValues;
+import android.content.Context;
+import android.database.ContentObservable;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
+import android.widget.ImageView;
+import android.widget.Toast;
+
+import com.example.maskon.model.DBMain;
+import com.example.maskon.view.CenterView.AddNewCenter;
+
+import java.io.ByteArrayOutputStream;
+import java.util.ArrayList;
+
 public class CenterRecord{
-    private int Center_ID, centerID;
+    private int Center_ID;
     private byte[] Center_Image;
     private String Center_Name, Center_Address, Center_PIC, Center_PhoneNum, Center_Email;
     private int Max_Cap, Curr_Cap;
+    SQLiteDatabase sqLiteDatabase;
+    DBMain dbMain;
+    private Context context;
 
-
+    //constructor for model center record
     public CenterRecord(int center_id, byte[] center_image, String center_name, String center_address, String center_pic, String center_phoneNum, String center_email, int max_cap, int curr_cap) {
         this.Center_ID = center_id;
         this.Center_Image = center_image;
@@ -20,6 +41,60 @@ public class CenterRecord{
         this.Curr_Cap = curr_cap;
     }
 
+    public CenterRecord(){
+    }
+
+    //function to set context
+    public void setContext(Context context) {
+        this.context = context;
+    }
+
+    //function to read center information
+    public Cursor readCenter(){
+        dbMain = new DBMain(context);
+        sqLiteDatabase=dbMain.getReadableDatabase();
+        Cursor cursor=null;
+        if(sqLiteDatabase!= null) {
+            cursor = sqLiteDatabase.rawQuery("SELECT * FROM " + TABLENAME, null);
+        }
+        return cursor;
+    }
+
+    //function to add new center
+    public void addCenter(ContentValues cv) {
+        dbMain = new DBMain(context);
+        sqLiteDatabase = dbMain.getWritableDatabase();
+
+        Long insert = sqLiteDatabase.insert(TABLENAME, null, cv);
+        if (insert != null) {
+            Toast.makeText(context, "New Center Created!", Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(context, "Data not inserted", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    //function to update center information
+    public void updateCenter(ContentValues cv, int id){
+        dbMain = new DBMain(context);
+        sqLiteDatabase = dbMain.getWritableDatabase();
+
+        long update = sqLiteDatabase.update(TABLENAME, cv, "Center_ID="+id, null);
+
+        if(update!=-1) {
+            Toast.makeText(context, "Center Updated Successfully", Toast.LENGTH_SHORT).show();
+        }else{
+            Toast.makeText(context, "Center Update Failed", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    //function to delete center
+    public void deleteCenter(int id){
+        dbMain = new DBMain(context);
+        sqLiteDatabase = dbMain.getReadableDatabase();
+        long delete = sqLiteDatabase.delete(TABLENAME, "Center_ID=" + id, null);
+    }
+
+    //getter and setter section for information of quarantine centers
     public int getCenter_ID() {
         return Center_ID;
     }

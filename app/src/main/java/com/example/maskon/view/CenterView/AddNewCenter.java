@@ -24,6 +24,7 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.maskon.R;
+import com.example.maskon.model.CenterRecord.CenterRecord;
 import com.example.maskon.model.DBMain;
 import com.example.maskon.model.DBMain;
 import com.squareup.picasso.Picasso;
@@ -32,11 +33,13 @@ import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
 
 public class AddNewCenter extends AppCompatActivity {
+//variable declaration
 DBMain dbmain;
 SQLiteDatabase sqLiteDatabase;
 ImageView centerImage;
 EditText centerName, centerAddress, centerPhoneNum, centerPIC, centerEmail, centerMaxCap, centerCurrCap;
 Button submit, updateBtn;
+CenterRecord centerRecord;
 int id=0;
 
 public static final int CAMERA_REQUEST=100;
@@ -53,6 +56,7 @@ String[]storagePermission;
         cameraPermission=new String[]{Manifest.permission.CAMERA,Manifest.permission.WRITE_EXTERNAL_STORAGE};
         storagePermission=new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE};
 
+        centerRecord = new CenterRecord();
         dbmain=new DBMain(this);
         findId();
         insertData();
@@ -60,6 +64,7 @@ String[]storagePermission;
         editData();
     }
 
+    //function to display original data when user click edit
     private void editData() {
         if (getIntent().getBundleExtra("centerdata")!=null){
             Bundle bundle = getIntent().getBundleExtra("centerdata");
@@ -83,6 +88,7 @@ String[]storagePermission;
         }
     }
 
+    //function to let user pick image
     private void imagePick() {
         centerImage.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -108,15 +114,18 @@ String[]storagePermission;
         });
     }
 
+    //function to request storage permission
     private void requestStoragePermission() {
         requestPermissions(storagePermission, STORAGE_REQUEST);
     }
 
+    //function to check storage permission
     private boolean checkStoragePermission() {
         boolean result=ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE)==(PackageManager.PERMISSION_GRANTED);
         return result;
     }
 
+    //function to let user pick image from gallery
     private void pickFromGallery() {
         Intent i = new Intent();
         i.setType("image/*");
@@ -124,6 +133,7 @@ String[]storagePermission;
 
         startActivityForResult(Intent.createChooser(i, "Select Picture"), SELECT_PICTURE);
     }
+
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -168,27 +178,23 @@ String[]storagePermission;
                 cv.put("Email", centerEmail.getText().toString());
                 cv.put("Max_Capacity", Integer.parseInt(centerMaxCap.getText().toString()));
                 cv.put("Curr_Capacity", Integer.parseInt(centerCurrCap.getText().toString()));
+                centerRecord.setContext(AddNewCenter.this);
 
                 try {
-                    sqLiteDatabase = dbmain.getWritableDatabase();
-                    Long insert = sqLiteDatabase.insert(TABLENAME, null, cv);
-                    if (insert != null) {
-                        Toast.makeText(AddNewCenter.this, "New Center Created!", Toast.LENGTH_SHORT).show();
-                        //clear input text when data submitted
-                        centerImage.setImageResource(R.mipmap.ic_launcher);
-                        centerName.setText("");
-                        centerAddress.setText("");
-                        centerPIC.setText("");
-                        centerEmail.setText("");
-                        centerPhoneNum.setText("");
-                        centerMaxCap.setText("");
-                        centerCurrCap.setText("");
-                        Intent intent = new Intent(AddNewCenter.this, CenterList.class);
-                        startActivity(intent);
-                    } else {
-                        Toast.makeText(AddNewCenter.this, "Data not inserted", Toast.LENGTH_SHORT).show();
-                    }
-                }catch(Exception e){
+                    centerRecord.addCenter(cv);
+
+                    //clear input text when data submitted
+                    centerImage.setImageResource(R.mipmap.ic_launcher);
+                    centerName.setText("");
+                    centerAddress.setText("");
+                    centerPIC.setText("");
+                    centerEmail.setText("");
+                    centerPhoneNum.setText("");
+                    centerMaxCap.setText("");
+                    centerCurrCap.setText("");
+                    Intent intent = new Intent(AddNewCenter.this, CenterList.class);
+                    startActivity(intent);
+                } catch(Exception e){
                     Toast.makeText(AddNewCenter.this, "Error when inserting data, " + e, Toast.LENGTH_SHORT).show();
                 }
             }
@@ -207,11 +213,12 @@ String[]storagePermission;
                 cv.put("Email", centerEmail.getText().toString());
                 cv.put("Max_Capacity", Integer.parseInt(centerMaxCap.getText().toString()));
                 cv.put("Curr_Capacity", Integer.parseInt(centerCurrCap.getText().toString()));
-                sqLiteDatabase=dbmain.getWritableDatabase();
 
-                long update = sqLiteDatabase.update(TABLENAME, cv, "Center_ID="+id, null);
-                if(update!=-1){
-                    Toast.makeText(AddNewCenter.this, "Center Updated Successfully", Toast.LENGTH_SHORT).show();
+
+                try{
+                centerRecord.setContext(AddNewCenter.this);
+                centerRecord.updateCenter(cv, id);
+
                     centerImage.setImageResource(R.mipmap.ic_launcher);
                     centerName.setText("");
                     centerAddress.setText("");
@@ -225,9 +232,8 @@ String[]storagePermission;
                     submit.setVisibility(View.VISIBLE);
                     Intent intent = new Intent(AddNewCenter.this, CenterList.class);
                     startActivity(intent);
-                }
-                else{
-                    Toast.makeText(AddNewCenter.this, "Center Update Failed", Toast.LENGTH_SHORT).show();
+                }catch(Exception e){
+                    Toast.makeText(AddNewCenter.this, "Update Failed" + e, Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -256,6 +262,7 @@ String[]storagePermission;
         updateBtn = (Button) findViewById(R.id.updateBtn);
     }
 
+    //function to check premission result
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
