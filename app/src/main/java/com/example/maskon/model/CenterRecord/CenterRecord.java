@@ -1,7 +1,8 @@
 package com.example.maskon.model.CenterRecord;
 
+
 public class CenterRecord{
-    private int Center_ID;
+    private int Center_ID, centerID;
     private byte[] Center_Image;
     private String Center_Name, Center_Address, Center_PIC, Center_PhoneNum, Center_Email;
     private int Max_Cap, Curr_Cap;
@@ -90,4 +91,5 @@ public class CenterRecord{
     public void setCurr_Cap(int curr_Cap) {
         this.Curr_Cap = curr_Cap;
     }
+
 }

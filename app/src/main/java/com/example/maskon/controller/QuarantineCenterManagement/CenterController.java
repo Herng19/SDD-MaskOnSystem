@@ -15,15 +15,6 @@ public class CenterController extends AppCompatActivity{
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_add_new_center);
-
-        Button backBtn = (Button) findViewById(R.id.backBtn);
-        backBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                setContentView(R.layout.activity_center_list);
-            }
-        });
-
         }
 };
 

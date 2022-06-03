@@ -36,7 +36,7 @@ DBMain dbmain;
 SQLiteDatabase sqLiteDatabase;
 ImageView centerImage;
 EditText centerName, centerAddress, centerPhoneNum, centerPIC, centerEmail, centerMaxCap, centerCurrCap;
-Button submit, backBtn, updateBtn;
+Button submit, updateBtn;
 int id=0;
 
 public static final int CAMERA_REQUEST=100;
@@ -55,7 +55,6 @@ String[]storagePermission;
 
         dbmain=new DBMain(this);
         findId();
-        back();
         insertData();
         imagePick();
         editData();
@@ -152,17 +151,6 @@ String[]storagePermission;
         boolean storage_permission= ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE)==(PackageManager.PERMISSION_GRANTED);
         boolean camera_permission=ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA)==(PackageManager.PERMISSION_GRANTED);
         return storage_permission && camera_permission;
-    }
-
-    //function to go back to center list page
-    private void back() {
-        backBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(AddNewCenter.this, CenterList.class);
-                startActivity(intent);
-            }
-        });
     }
 
 
@@ -265,7 +253,6 @@ String[]storagePermission;
         centerMaxCap= (EditText) findViewById(R.id.inputMaxCap);
         centerCurrCap= (EditText) findViewById(R.id.inputCurrCap);
         submit= (Button) findViewById(R.id.addBtn);
-        backBtn = (Button) findViewById(R.id.backBtn);
         updateBtn = (Button) findViewById(R.id.updateBtn);
     }
 

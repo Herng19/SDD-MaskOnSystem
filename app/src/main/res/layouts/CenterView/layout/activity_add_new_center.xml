@@ -190,19 +190,6 @@
                 android:layout_marginTop="15dp">
 
                 <com.google.android.material.button.MaterialButton
-                    android:id="@+id/backBtn"
-                    android:layout_width="100dp"
-                    android:layout_height="50dp"
-                    android:layout_gravity="center"
-                    android:layout_marginEnd="20dp"
-                    android:text="BACK"
-                    android:textColor="@color/white"
-                    app:backgroundTint="@color/primary"
-                    app:cornerRadius="6dp"
-                    app:strokeColor="#FFFFFF"
-                    app:strokeWidth="2dp" />
-
-                <com.google.android.material.button.MaterialButton
                     android:id="@+id/addBtn"
                     android:layout_width="100dp"
                     android:layout_height="50dp"

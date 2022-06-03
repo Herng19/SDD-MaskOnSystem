@@ -1,5 +1,7 @@
 package com.example.maskon.view.CenterView;
 
+import static com.example.maskon.model.DBMain.TABLENAME;
+
 import android.content.Context;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
@@ -12,12 +14,14 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.maskon.R;
 import com.example.maskon.model.CenterRecord.CenterRecord;
+import com.example.maskon.model.DBMain;
 
 import java.util.ArrayList;
 
@@ -26,12 +30,14 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
     int singleData;
     ArrayList<CenterRecord>centerRecordArrayList;
     SQLiteDatabase sqLiteDatabase;
+    boolean isUser;
 
-    public MyAdapter(Context context, int singleData, ArrayList<CenterRecord> centerRecordArrayList, SQLiteDatabase sqLiteDatabase) {
+    public MyAdapter(Context context, int singleData, ArrayList<CenterRecord> centerRecordArrayList, SQLiteDatabase sqLiteDatabase, boolean isUser) {
         this.context = context;
         this.singleData = singleData;
         this.centerRecordArrayList = centerRecordArrayList;
         this.sqLiteDatabase = sqLiteDatabase;
+        this.isUser=isUser;
     }
 
     @NonNull
@@ -56,32 +62,46 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         holder.txtCenterEmail.setText(centerRecord.getCenter_Email());
         holder.txtCenterCurrCap.setText(String.valueOf(centerRecord.getCurr_Cap())+"/"+String.valueOf(centerRecord.getMax_Cap()));
 
-        holder.deleteBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                //delete operation
-            }
-        });
+        if(isUser){
+            holder.updateBtn.setVisibility(View.GONE);
+            holder.deleteBtn.setVisibility(View.GONE);
+        }else {
+            holder.deleteBtn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    DBMain dbMain = new DBMain(context);
+                    sqLiteDatabase = dbMain.getReadableDatabase();
+                    long delete = sqLiteDatabase.delete(TABLENAME, "Center_ID=" + centerRecord.getCenter_ID(), null);
+                    if (delete != -1) {
+                        Toast.makeText(context, "Center Deleted", Toast.LENGTH_SHORT).show();
+                        centerRecordArrayList.remove(holder.getAdapterPosition());
+                        notifyDataSetChanged();
+                    } else {
+                        Toast.makeText(context, "Center Not Deleted, Something Wrong", Toast.LENGTH_SHORT).show();
+                    }
+                }
+            });
 
-        holder.updateBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Bundle bundle = new Bundle();
-                bundle.putInt("Center_ID", centerRecord.getCenter_ID());
-                bundle.putByteArray("Center_Image", centerRecord.getCenter_Image());
-                bundle.putString("Center_Name", centerRecord.getCenter_Name());
-                bundle.putString("Address", centerRecord.getCenter_Address());
-                bundle.putString("PIC", centerRecord.getCenter_PIC());
-                bundle.putString("Contact_Num", centerRecord.getCenter_PhoneNum());
-                bundle.putString("Email", centerRecord.getCenter_Email());
-                bundle.putInt("Max_Capacity", centerRecord.getMax_Cap());
-                bundle.putInt("Curr_Capacity", centerRecord.getCurr_Cap());
+            holder.updateBtn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Bundle bundle = new Bundle();
+                    bundle.putInt("Center_ID", centerRecord.getCenter_ID());
+                    bundle.putByteArray("Center_Image", centerRecord.getCenter_Image());
+                    bundle.putString("Center_Name", centerRecord.getCenter_Name());
+                    bundle.putString("Address", centerRecord.getCenter_Address());
+                    bundle.putString("PIC", centerRecord.getCenter_PIC());
+                    bundle.putString("Contact_Num", centerRecord.getCenter_PhoneNum());
+                    bundle.putString("Email", centerRecord.getCenter_Email());
+                    bundle.putInt("Max_Capacity", centerRecord.getMax_Cap());
+                    bundle.putInt("Curr_Capacity", centerRecord.getCurr_Cap());
 
-                Intent intent = new Intent(context, AddNewCenter.class);
-                intent.putExtra("centerdata", bundle);
-                context.startActivity(intent);
-            }
-        });
+                    Intent intent = new Intent(context, AddNewCenter.class);
+                    intent.putExtra("centerdata", bundle);
+                    context.startActivity(intent);
+                }
+            });
+        }
     }
 
     @Override
