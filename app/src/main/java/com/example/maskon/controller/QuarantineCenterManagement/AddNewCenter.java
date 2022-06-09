@@ -1,13 +1,10 @@
-package com.example.maskon.view.CenterView;
-
-import static com.example.maskon.model.DBMain.TABLENAME;
+package com.example.maskon.controller.QuarantineCenterManagement;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
 import android.Manifest;
-import android.app.Activity;
 import android.content.ContentValues;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -26,11 +23,9 @@ import android.widget.Toast;
 import com.example.maskon.R;
 import com.example.maskon.model.CenterRecord.CenterRecord;
 import com.example.maskon.model.DBMain;
-import com.example.maskon.model.DBMain;
 import com.squareup.picasso.Picasso;
 
 import java.io.ByteArrayOutputStream;
-import java.io.InputStream;
 
 public class AddNewCenter extends AppCompatActivity {
 //variable declaration
@@ -192,7 +187,7 @@ String[]storagePermission;
                     centerPhoneNum.setText("");
                     centerMaxCap.setText("");
                     centerCurrCap.setText("");
-                    Intent intent = new Intent(AddNewCenter.this, CenterList.class);
+                    Intent intent = new Intent(AddNewCenter.this, AdminQuarantineCenterList.class);
                     startActivity(intent);
                 } catch(Exception e){
                     Toast.makeText(AddNewCenter.this, "Error when inserting data, " + e, Toast.LENGTH_SHORT).show();
@@ -230,7 +225,7 @@ String[]storagePermission;
 
                     updateBtn.setVisibility(View.GONE);
                     submit.setVisibility(View.VISIBLE);
-                    Intent intent = new Intent(AddNewCenter.this, CenterList.class);
+                    Intent intent = new Intent(AddNewCenter.this, AdminQuarantineCenterList.class);
                     startActivity(intent);
                 }catch(Exception e){
                     Toast.makeText(AddNewCenter.this, "Update Failed" + e, Toast.LENGTH_SHORT).show();

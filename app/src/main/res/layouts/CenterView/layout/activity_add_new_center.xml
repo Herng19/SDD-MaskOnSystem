@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/primary"
-    tools:context=".view.CenterView.AddNewCenter">
+    tools:context=".controller.QuarantineCenterManagement.AddNewCenter">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -130,7 +130,7 @@
                 android:layout_marginEnd="20dp"
                 android:backgroundTint="#FFFFFF"
                 android:hint="EMAIL"
-                android:inputType="textEmailAddress"
+                android:inputType="textWebEmailAddress|textEmailAddress|textEmailSubject"
                 android:textColor="#FFFFFF"
                 android:textColorHint="#FFFFFF"
                 app:layout_constraintEnd_toEndOf="parent"

@@ -14,16 +14,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Maskon">
         <activity
-            android:name=".view.CenterView.QuarantineCenterList"
+            android:name=".controller.QuarantineCenterManagement.UserQuarantineCenterList"
             android:exported="true"
-            android:parentActivityName=".view.CenterView.CenterList"/>
+            android:parentActivityName=".controller.QuarantineCenterManagement.AdminQuarantineCenterList"/>
         <activity
             android:name=".MainActivity"
             android:exported="true" />
         <activity
-            android:name=".view.CenterView.AddNewCenter"
+            android:name=".controller.QuarantineCenterManagement.AddNewCenter"
             android:exported="true"
-            android:parentActivityName=".view.CenterView.CenterList"/>
+            android:parentActivityName=".controller.QuarantineCenterManagement.AdminQuarantineCenterList"/>
         <activity
             android:name=".view.VaccineView.VaccineView"
             android:exported="true" />
@@ -64,7 +64,7 @@
             android:exported="true"
             android:label="@string/title_activity_add_test_results" />
         <activity
-            android:name=".view.CenterView.CenterList"
+            android:name=".controller.QuarantineCenterManagement.AdminQuarantineCenterList"
             android:exported="true"
             android:label="@string/app_name">
             <intent-filter>

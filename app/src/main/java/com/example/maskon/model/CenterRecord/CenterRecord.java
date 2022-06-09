@@ -5,19 +5,11 @@ import static com.example.maskon.model.DBMain.TABLENAME;
 
 import android.content.ContentValues;
 import android.content.Context;
-import android.database.ContentObservable;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.graphics.Bitmap;
-import android.graphics.drawable.BitmapDrawable;
-import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.maskon.model.DBMain;
-import com.example.maskon.view.CenterView.AddNewCenter;
-
-import java.io.ByteArrayOutputStream;
-import java.util.ArrayList;
 
 public class CenterRecord{
     private int Center_ID;

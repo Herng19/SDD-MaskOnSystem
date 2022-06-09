@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/primary"
-    tools:context=".view.CenterView.QuarantineCenterList">
+    tools:context=".controller.QuarantineCenterManagement.UserQuarantineCenterList">
 
     <TextView
         android:id="@+id/textView"

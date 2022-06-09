@@ -15,22 +15,26 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b13391db-ee48-41a5-9aa9-aca91d7c7667" name="Default Changelist" comment="add user view for center list">
+    <list default="true" id="b13391db-ee48-41a5-9aa9-aca91d7c7667" name="Default Changelist" comment="done all function for admin CRUD and user view only">
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/controller/QuarantineCenterManagement/CenterController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/model/CenterRecord/CenterRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/model/CenterRecord/CenterRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/model/DBMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/model/DBMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/view/CenterView/AddNewCenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/view/CenterView/AddNewCenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/view/CenterView/CenterList.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/view/CenterView/CenterList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/view/CenterView/MyAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/view/CenterView/MyAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/view/CenterView/QuarantineCenterList.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/view/CenterView/QuarantineCenterList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/view/CenterView/AddNewCenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/controller/QuarantineCenterManagement/AddNewCenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/view/CenterView/CenterList.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/controller/QuarantineCenterManagement/AdminQuarantineCenterList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/view/CenterView/MyAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/controller/QuarantineCenterManagement/MyAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/view/CenterView/QuarantineCenterList.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/controller/QuarantineCenterManagement/UserQuarantineCenterList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layouts/CenterView/layout/activity_add_new_center.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layouts/CenterView/layout/activity_add_new_center.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layouts/CenterView/layout/activity_center_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layouts/CenterView/layout/activity_admin_quarantine_center_list.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layouts/CenterView/layout/activity_quarantine_center_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layouts/CenterView/layout/activity_user_quarantine_center_list.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[ceef1963]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\abc\.android\avd\Pixel_2_API_30_1.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -257,7 +261,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654242942839</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="done all function for admin CRUD and user view only">
+      <created>1654260067202</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1654260067203</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -279,6 +290,7 @@
     <MESSAGE value="add image input" />
     <MESSAGE value="add update function" />
     <MESSAGE value="add user view for center list" />
-    <option name="LAST_COMMIT_MESSAGE" value="add user view for center list" />
+    <MESSAGE value="done all function for admin CRUD and user view only" />
+    <option name="LAST_COMMIT_MESSAGE" value="done all function for admin CRUD and user view only" />
   </component>
 </project>

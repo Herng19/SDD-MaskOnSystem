@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/primary"
     android:foregroundTint="#FFFFFF"
-    tools:context=".view.CenterView.CenterList"
+    tools:context=".controller.QuarantineCenterManagement.AdminQuarantineCenterList"
     android:fitsSystemWindows="true">
 
     <TextView

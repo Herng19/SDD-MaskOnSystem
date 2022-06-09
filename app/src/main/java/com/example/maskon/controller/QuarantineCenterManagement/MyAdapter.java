@@ -1,8 +1,8 @@
-package com.example.maskon.view.CenterView;
+package com.example.maskon.controller.QuarantineCenterManagement;
 
-import static com.example.maskon.model.DBMain.TABLENAME;
-
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Bitmap;
@@ -21,7 +21,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.maskon.R;
 import com.example.maskon.model.CenterRecord.CenterRecord;
-import com.example.maskon.model.DBMain;
 
 import java.util.ArrayList;
 
@@ -60,11 +59,11 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 
         holder.centerImage.setImageBitmap(bitmap);
         holder.txtCenterName.setText(centerRecord.getCenter_Name());
-        holder.txtCenterAddress.setText(centerRecord.getCenter_Address());
-        holder.txtCenterPIC.setText(centerRecord.getCenter_PIC());
-        holder.txtCenterPhoneNum.setText(centerRecord.getCenter_PhoneNum());
-        holder.txtCenterEmail.setText(centerRecord.getCenter_Email());
-        holder.txtCenterCurrCap.setText(String.valueOf(centerRecord.getCurr_Cap())+"/"+String.valueOf(centerRecord.getMax_Cap()));
+        holder.txtCenterAddress.setText("Adress: "+centerRecord.getCenter_Address());
+        holder.txtCenterPIC.setText("PIC: "+centerRecord.getCenter_PIC());
+        holder.txtCenterPhoneNum.setText("Contact: "+centerRecord.getCenter_PhoneNum());
+        holder.txtCenterEmail.setText("Email: "+centerRecord.getCenter_Email());
+        holder.txtCenterCurrCap.setText("Capacity: "+String.valueOf(centerRecord.getCurr_Cap())+"/"+String.valueOf(centerRecord.getMax_Cap()));
 
         if(isUser){
             holder.updateBtn.setVisibility(View.GONE);
@@ -74,16 +73,29 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
             holder.deleteBtn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    try{
-                    centerRecord.setContext(context);
-                    centerRecord.deleteCenter(centerRecord.getCenter_ID());
-                        Toast.makeText(context, "Center Deleted", Toast.LENGTH_SHORT).show();
-                        centerRecordArrayList.remove(holder.getAdapterPosition());
-                        notifyDataSetChanged();
-                    }catch (Exception e)
-                    {
-                        Toast.makeText(context, "Center Not Deleted, " + e, Toast.LENGTH_SHORT).show();
-                    }
+                    AlertDialog.Builder alertBox = new AlertDialog.Builder(context);
+                    alertBox.setCancelable(true);
+                    alertBox.setTitle("Delete Center");
+                    alertBox.setMessage("Confirm to delete this center ?");
+
+                    alertBox.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            dialogInterface.cancel();
+                        }
+                    });
+                    alertBox.setPositiveButton("Confirm", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            centerRecord.setContext(context);
+                            centerRecord.deleteCenter(centerRecord.getCenter_ID());
+                            Toast.makeText(context, "Center Deleted", Toast.LENGTH_SHORT).show();
+                            centerRecordArrayList.remove(holder.getAdapterPosition());
+                            notifyDataSetChanged();
+                        }
+                    });
+                    alertBox.show();
+                        //Toast.makeText(context, "Center Not Deleted, ", Toast.LENGTH_SHORT).show();
                 }
             });
 
