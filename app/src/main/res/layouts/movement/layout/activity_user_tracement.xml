@@ -155,7 +155,8 @@
             android:layout_marginTop="30dp"
             android:background="@drawable/text_vacc"
             android:fontFamily="@font/poppins"
-            android:text="Fully Vaccinated"
+            android:text="Fully
+            Vaccinated"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="15sp"
