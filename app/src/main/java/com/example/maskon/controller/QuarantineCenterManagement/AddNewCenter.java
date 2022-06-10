@@ -257,7 +257,7 @@ String[]storagePermission;
         updateBtn = (Button) findViewById(R.id.updateBtn);
     }
 
-    //function to check premission result
+    //function to check permission result
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);

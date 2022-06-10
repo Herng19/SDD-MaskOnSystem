@@ -16,18 +16,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b13391db-ee48-41a5-9aa9-aca91d7c7667" name="Default Changelist" comment="done all function for admin CRUD and user view only">
+      <change beforePath="$PROJECT_DIR$/.gradle/7.0.2/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.0.2/dependencies-accessors/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.0.2/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.0.2/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.0.2/gc.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/controller/QuarantineCenterManagement/CenterController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/controller/QuarantineCenterManagement/AddNewCenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/controller/QuarantineCenterManagement/AddNewCenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/controller/QuarantineCenterManagement/MyAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/controller/QuarantineCenterManagement/MyAdapter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/model/CenterRecord/CenterRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/model/CenterRecord/CenterRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/view/CenterView/AddNewCenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/controller/QuarantineCenterManagement/AddNewCenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/view/CenterView/CenterList.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/controller/QuarantineCenterManagement/AdminQuarantineCenterList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/view/CenterView/MyAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/controller/QuarantineCenterManagement/MyAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/view/CenterView/QuarantineCenterList.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/controller/QuarantineCenterManagement/UserQuarantineCenterList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layouts/CenterView/layout/activity_add_new_center.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layouts/CenterView/layout/activity_add_new_center.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layouts/CenterView/layout/activity_center_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layouts/CenterView/layout/activity_admin_quarantine_center_list.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layouts/CenterView/layout/activity_quarantine_center_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layouts/CenterView/layout/activity_user_quarantine_center_list.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

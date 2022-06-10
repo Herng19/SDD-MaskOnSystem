@@ -84,6 +84,13 @@ public class CenterRecord{
         dbMain = new DBMain(context);
         sqLiteDatabase = dbMain.getReadableDatabase();
         long delete = sqLiteDatabase.delete(TABLENAME, "Center_ID=" + id, null);
+
+        if(delete!=-1){
+            Toast.makeText(context, "Center Deleted", Toast.LENGTH_SHORT).show();
+        }
+        else{
+            Toast.makeText(context, "Center Delete Failed", Toast.LENGTH_SHORT).show();
+        }
     }
 
     //getter and setter section for information of quarantine centers

@@ -89,7 +89,6 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
                         public void onClick(DialogInterface dialogInterface, int i) {
                             centerRecord.setContext(context);
                             centerRecord.deleteCenter(centerRecord.getCenter_ID());
-                            Toast.makeText(context, "Center Deleted", Toast.LENGTH_SHORT).show();
                             centerRecordArrayList.remove(holder.getAdapterPosition());
                             notifyDataSetChanged();
                         }
