@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#1073B6"
-    tools:context=".view.MovementView.UserTracement">
-
+    tools:context=".view.MovementView.CheckedOut">
     <ImageView
         android:id="@+id/maskon"
         android:layout_width="wrap_content"
@@ -33,38 +32,8 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="309dp"
-        android:layout_height="58dp"
-        android:layout_marginStart="148dp"
-        android:layout_marginTop="196dp"
-        android:layout_marginEnd="169dp"
-        android:background="@drawable/btn_bg"
-        android:text="Checked-in"
-        android:textAllCaps="true"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.483"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="225dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="148dp"
-        android:layout_marginTop="660dp"
-        android:layout_marginEnd="169dp"
-        android:background="@drawable/btn_bg"
-        android:text="Check-out"
-        android:textAllCaps="false"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.419"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="308dp"
         android:layout_height="377dp"
         android:layout_marginStart="20dp"
@@ -78,7 +47,7 @@
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.764"
+        app:layout_constraintVertical_bias="0.445"
         tools:ignore="MissingConstraints">
 
         <TextView
@@ -178,7 +147,7 @@
             android:layout_width="140dp"
             android:layout_height="45dp"
             android:layout_marginLeft="75dp"
-            android:layout_marginTop="640dp"
+            android:layout_marginTop="440dp"
             android:layout_marginBottom="200dp"
             android:background="@drawable/text_risk"
             android:fontFamily="@font/poppins"
@@ -189,5 +158,15 @@
             android:textStyle="bold" />
 
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="162dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="552dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/checkout" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
