@@ -5,4 +5,6 @@
     <string name="title_notifications">Notifications</string>
     <string name="title_activity_vaccine_registration">VaccineRegistration</string>
     <string name="title_activity_add_test_results">AddTestResults</string>
+    <string name="register_as_citizen">Register as citizen</string>
+    <string name="register_as_visitor">Register as visitor</string>
 </resources>

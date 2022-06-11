@@ -1,5 +1,6 @@
 package com.example.maskon.view.MovementView;
 
+<<<<<<< Updated upstream
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -14,3 +15,7 @@ public class CheckInMenu extends AppCompatActivity {
         setContentView(R.layout.activity_check_in_menu);
     }
 }
+=======
+public class CheckinMenu {
+}
+>>>>>>> Stashed changes

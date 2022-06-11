@@ -4,23 +4,18 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/SDW2/app/src/main/res/layout/activity_main.xml" value="0.22" />
-<<<<<<< Updated upstream
-=======
-        <entry key="..\:/Users/Kamal/Documents/GitHub/SDD-MaskOnSystem/app/src/main/res/drawable/btn_bg.xml" value="0.2265" />
-        <entry key="..\:/Users/Kamal/Documents/GitHub/SDD-MaskOnSystem/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.217" />
-        <entry key="..\:/Users/Kamal/Documents/GitHub/SDD-MaskOnSystem/app/src/main/res/drawable/text_name.xml" value="0.217" />
-        <entry key="..\:/Users/Kamal/Documents/GitHub/SDD-MaskOnSystem/app/src/main/res/drawable/text_risk.xml" value="0.217" />
-        <entry key="..\:/Users/Kamal/Documents/GitHub/SDD-MaskOnSystem/app/src/main/res/drawable/text_vacc.xml" value="0.217" />
-        <entry key="..\:/Users/Kamal/Documents/GitHub/SDD-MaskOnSystem/app/src/main/res/layout/activity_check_in_menu.xml" value="0.25" />
-        <entry key="..\:/Users/Kamal/Documents/GitHub/SDD-MaskOnSystem/app/src/main/res/layout/activity_movement_history.xml" value="0.25" />
-        <entry key="..\:/Users/Kamal/Documents/GitHub/SDD-MaskOnSystem/app/src/main/res/layout/activity_scan_qrcode.xml" value="0.25" />
-        <entry key="..\:/Users/Kamal/Documents/GitHub/SDD-MaskOnSystem/app/src/main/res/layout/activity_user_tracement.xml" value="0.24895833333333334" />
-        <entry key="..\:/Users/Kamal/Documents/GitHub/SDD-MaskOnSystem/app/src/main/res/layout/fragment_dashboard.xml" value="0.25" />
-        <entry key="..\:/Users/Kamal/Documents/GitHub/SDD-MaskOnSystem/app/src/main/res/layouts/movement/layout/activity_checkin_menu.xml" value="0.2" />
-        <entry key="..\:/Users/Kamal/Documents/GitHub/SDD-MaskOnSystem/app/src/main/res/layouts/movement/layout/activity_user_tracement.xml" value="0.25" />
->>>>>>> Stashed changes
+        <entry key="..\:/Users/user/Documents/GitHub/SDD-MaskOnSystem/app/src/main/res/layout/activity_main.xml" value="0.19927536231884058" />
+        <entry key="..\:/Users/user/Documents/GitHub/SDD-MaskOnSystem/app/src/main/res/layouts/dependent/layout/activity_dependent_profile.xml" value="0.25" />
+        <entry key="..\:/Users/user/Documents/GitHub/SDD-MaskOnSystem/app/src/main/res/layouts/dependent/layout/activity_dependent_register.xml" value="0.30459363957597174" />
+        <entry key="..\:/Users/user/Documents/GitHub/SDD-MaskOnSystem/app/src/main/res/layouts/registration/layout/activity_citizen_register.xml" value="0.25" />
+        <entry key="..\:/Users/user/Documents/GitHub/SDD-MaskOnSystem/app/src/main/res/layouts/registration/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/Users/user/Documents/GitHub/SDD-MaskOnSystem/app/src/main/res/layouts/registration/layout/activity_visitor_login.xml" value="0.16802536231884058" />
+        <entry key="..\:/Users/user/Documents/GitHub/SDD-MaskOnSystem/app/src/main/res/layouts/registration/layout/activity_visitor_register.xml" value="0.25" />
       </map>
     </option>
+  </component>
+  <component name="ProjectResources">
+    <xml-schema-version>XMLSchema_1_1</xml-schema-version>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
