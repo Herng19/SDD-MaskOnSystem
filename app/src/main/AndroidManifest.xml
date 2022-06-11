@@ -25,9 +25,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".login"
-            android:exported="false" />
-        <activity
             android:name=".MovementRecordStaff"
             android:exported="false" />
         <activity

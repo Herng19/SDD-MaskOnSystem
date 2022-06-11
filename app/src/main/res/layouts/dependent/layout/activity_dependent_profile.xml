@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD:app/src/main/res/layouts/Registration_ManageProfile/layout/activity_login.xml
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context=".login">
+=======
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.DependentView.DependentProfile">
+>>>>>>> parent of d0504b9 (Design):app/src/main/res/layouts/dependent/layout/activity_dependent_profile.xml
+
+</androidx.constraintlayout.widget.ConstraintLayout>

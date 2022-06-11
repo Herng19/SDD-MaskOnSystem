@@ -11,6 +11,6 @@ public class VisitorLogin extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_citizen_register);
+        setContentView(R.layout.activity_visitor_login);
     }
 }
