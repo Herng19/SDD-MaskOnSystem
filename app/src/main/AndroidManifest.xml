@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Maskon">
         <activity
+            android:name=".ManageDependent"
+            android:exported="false" />
+        <activity
             android:name=".ProfileVistitor"
             android:exported="false" />
         <activity
