@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Maskon">
         <activity
+            android:name=".ProfileCitizen"
+            android:exported="false" />
+        <activity
+            android:name=".ForgotPass"
+            android:exported="false" />
+        <activity
             android:name=".RegisterCitizen"
             android:exported="false" />
         <activity
