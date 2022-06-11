@@ -1,16 +1,14 @@
-package com.example.maskon.view.RegistrationView;
+package com.example.maskon;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import com.example.maskon.R;
-
-public class VisitorLogin extends AppCompatActivity {
+public class login extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_citizen_register);
+        setContentView(R.layout.activity_login);
     }
 }
