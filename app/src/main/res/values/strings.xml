@@ -6,4 +6,5 @@
     <string name="title_activity_vaccine_registration">VaccineRegistration</string>
     <string name="title_activity_add_test_results">AddTestResults</string>
     <string name="after_2nd_dose">After 2nd Dose</string>
+    <string name="kindly_verify_your_personal_details_below">Kindly verify your personal details below:</string>
 </resources>
