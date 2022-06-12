@@ -9,7 +9,9 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="61dp"
+        tools:layout_editor_absoluteY="40dp">
 
         <TextView
             android:id="@+id/textView28"
@@ -27,7 +29,7 @@
             android:layout_height="350"
             app:cardCornerRadius="10dp"
             tools:layout_editor_absoluteX="27dp"
-            tools:layout_editor_absoluteY="148dp" >
+            tools:layout_editor_absoluteY="148dp">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -35,10 +37,10 @@
 
                 <Button
                     android:id="@+id/button12"
-                    android:layout_width="71dp"
+                    android:layout_width="80dp"
                     android:layout_height="34dp"
                     android:backgroundTint="#255BB8"
-                    android:text="Save"
+                    android:text="Update"
                     android:textSize="10sp"
                     tools:layout_editor_absoluteX="240dp"
                     tools:layout_editor_absoluteY="53dp" />
@@ -77,7 +79,7 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    tools:layout_editor_absoluteX="-86dp"
+                    tools:layout_editor_absoluteX="0dp"
                     tools:layout_editor_absoluteY="0dp">
 
                     <EditText
@@ -86,20 +88,20 @@
                         android:layout_height="wrap_content"
                         android:ems="10"
                         android:inputType="textPersonName"
-                        android:text="Younger Brother"
+                        android:text="Younger Sister"
                         android:textSize="14sp"
                         tools:layout_editor_absoluteX="42dp"
                         tools:layout_editor_absoluteY="263dp" />
 
                     <Button
-                        android:id="@+id/button15"
-                        android:layout_width="71dp"
+                        android:id="@+id/button14"
+                        android:layout_width="80dp"
                         android:layout_height="34dp"
-                        android:backgroundTint="#BA1B1B"
-                        android:text="Save"
+                        android:backgroundTint="#255BB8"
+                        android:text="Update"
                         android:textSize="10sp"
                         tools:layout_editor_absoluteX="240dp"
-                        tools:layout_editor_absoluteY="247dp" />
+                        tools:layout_editor_absoluteY="216dp" />
 
                     <TextView
                         android:id="@+id/textView41"
@@ -116,10 +118,10 @@
                         android:layout_height="wrap_content"
                         android:ems="10"
                         android:inputType="textPersonName"
-                        android:text="Ali bin Ahmad"
+                        android:text="Fatimah binti Ali"
                         android:textSize="14sp"
-                        tools:layout_editor_absoluteX="43dp"
-                        tools:layout_editor_absoluteY="195dp" />
+                        tools:layout_editor_absoluteX="42dp"
+                        tools:layout_editor_absoluteY="194dp" />
 
                     <TextView
                         android:id="@+id/textView42"
@@ -128,17 +130,17 @@
                         android:text="Name :"
                         android:textSize="12sp"
                         tools:layout_editor_absoluteX="42dp"
-                        tools:layout_editor_absoluteY="179dp" />
+                        tools:layout_editor_absoluteY="178dp" />
 
                     <Button
-                        android:id="@+id/button14"
-                        android:layout_width="71dp"
+                        android:id="@+id/button15"
+                        android:layout_width="80dp"
                         android:layout_height="34dp"
-                        android:backgroundTint="#255BB8"
-                        android:text="Save"
+                        android:backgroundTint="#BA1B1B"
+                        android:text="delete"
                         android:textSize="10sp"
                         tools:layout_editor_absoluteX="240dp"
-                        tools:layout_editor_absoluteY="216dp" />
+                        tools:layout_editor_absoluteY="247dp" />
 
                     <TextView
                         android:id="@+id/textView33"
@@ -158,10 +160,10 @@
 
                     <Button
                         android:id="@+id/button13"
-                        android:layout_width="71dp"
+                        android:layout_width="80dp"
                         android:layout_height="34dp"
                         android:backgroundTint="#BA1B1B"
-                        android:text="Save"
+                        android:text="Delete"
                         android:textSize="10sp"
                         tools:layout_editor_absoluteX="240dp"
                         tools:layout_editor_absoluteY="87dp" />
@@ -181,9 +183,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             tools:layout_editor_absoluteY="563dp" />
-
-
-
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
