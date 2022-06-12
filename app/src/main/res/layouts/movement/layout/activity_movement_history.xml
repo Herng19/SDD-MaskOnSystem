@@ -116,7 +116,7 @@
                 app:srcCompat="@drawable/location" />
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/textVaccinated"
                 android:layout_width="224dp"
                 android:layout_height="34dp"
                 android:layout_marginTop="8dp"
@@ -128,7 +128,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/textRisk"
                 android:layout_width="224dp"
                 android:layout_height="34dp"
                 android:layout_marginTop="48dp"
@@ -218,7 +218,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/textView8"
+                android:id="@+id/textUserInfo"
                 android:layout_width="224dp"
                 android:layout_height="34dp"
                 android:layout_marginTop="48dp"
