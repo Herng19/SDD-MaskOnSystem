@@ -4,6 +4,5 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.ProfileView.ManageDependent">
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    android:background="#1073B6"
+    tools:context=".view.ProfileView.ManageDependent"/>
