@@ -7,4 +7,12 @@
     <string name="title_activity_add_test_results">AddTestResults</string>
     <string name="after_2nd_dose">After 2nd Dose</string>
     <string name="kindly_verify_your_personal_details_below">Kindly verify your personal details below:</string>
+    <string name="current_address">Current Address</string>
+    <string name="enter_your_dependent_details">Enter your dependent details</string>
+    <string name="relation">Relation</string>
+    <string name="all_field_are_mandatory">All field are mandatory</string>
+    <string name="full_name">Full Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="cancel">Cancel</string>
+    <string name="submit">Submit</string>
 </resources>

@@ -28,32 +28,50 @@
 
                 <EditText
                     android:id="@+id/editTextTextPersonName"
-                    android:layout_width="313dp"
-                    android:layout_height="47dp"
+                    android:layout_width="314dp"
+                    android:layout_height="53dp"
+                    android:layout_marginStart="21dp"
+                    android:layout_marginTop="115dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="39dp"
                     android:ems="10"
                     android:inputType="textPersonName"
-                    android:text="Full Name"
-                    tools:layout_editor_absoluteX="20dp"
-                    tools:layout_editor_absoluteY="112dp" />
+                    android:text="@string/full_name"
+                    app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:importantForAutofill="no" />
 
                 <EditText
                     android:id="@+id/editTextTextPersonName2"
-                    android:layout_width="313dp"
-                    android:layout_height="44dp"
+                    android:layout_width="317dp"
+                    android:layout_height="54dp"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginEnd="17dp"
                     android:ems="10"
                     android:inputType="textPersonName"
-                    android:text="Relation"
-                    tools:layout_editor_absoluteX="20dp"
-                    tools:layout_editor_absoluteY="165dp" />
+                    android:text="@string/relation"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+                    android:autofillHints="" />
 
                 <EditText
-                    android:id="@+id/editTextNumber"
-                    android:layout_width="312dp"
-                    android:layout_height="46dp"
+                    android:id="@+id/editTextTextPersonName5"
+                    android:layout_width="316dp"
+                    android:layout_height="49dp"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginEnd="16dp"
                     android:ems="10"
-                    android:inputType="number"
-                    tools:layout_editor_absoluteX="22dp"
-                    tools:layout_editor_absoluteY="214dp" />
+                    android:inputType="textPersonName"
+                    android:text="@string/phone_number"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
+                    android:autofillHints="" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -65,19 +83,25 @@
                     android:id="@+id/textView25"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Enter your dependent details"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="117dp"
+                    android:text="@string/enter_your_dependent_details"
                     android:textColor="@color/black"
-                    android:textSize="17dp"
-                    tools:layout_editor_absoluteX="16dp"
-                    tools:layout_editor_absoluteY="16dp" />
+                    android:textSize="17sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/textView26"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="All field are mandatory"
-                    tools:layout_editor_absoluteX="16dp"
-                    tools:layout_editor_absoluteY="42dp" />
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="439dp"
+                    android:text="@string/all_field_are_mandatory"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -85,12 +109,52 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <RadioGroup
-                    android:layout_width="15dp"
-                    android:layout_height="15dp"
-                    tools:layout_editor_absoluteX="25dp"
-                    tools:layout_editor_absoluteY="287dp" />
+                <EditText
+                    android:id="@+id/editTextTextPersonName4"
+                    android:layout_width="315dp"
+                    android:layout_height="53dp"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="88dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="@string/current_address"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:autofillHints="" />
             </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="433dp"
+                    android:layout_marginEnd="52dp"
+                    android:layout_marginBottom="19dp"
+                    android:text="@string/submit"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="434dp"
+                    android:layout_marginEnd="58dp"
+                    android:layout_marginBottom="18dp"
+                    android:text="@string/cancel"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/button5"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
         </androidx.cardview.widget.CardView>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
