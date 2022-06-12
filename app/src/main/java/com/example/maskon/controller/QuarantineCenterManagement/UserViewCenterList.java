@@ -23,6 +23,7 @@ public class UserQuarantineCenterList extends AppCompatActivity {
     CenterRecord centerRecord;
 
     @Override
+    //function to call all other functions in this class when first call
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_quarantine_center_list);
