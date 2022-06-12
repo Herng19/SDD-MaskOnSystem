@@ -10,11 +10,11 @@
 
     <TextView
         android:id="@+id/heading1"
-        android:layout_width="350dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="40dp"
-        android:text="Hey, Mask On! There are 20 new cases near you."
+        android:text="Hey, Mask On! Let's do this together !"
         android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/actions"
@@ -29,7 +29,7 @@
         android:layout_height="wrap_content"
         android:text="Actions"
         android:textColor="@color/white"
-        android:textSize="24sp"
+        android:textSize="18sp"
         android:layout_marginTop="20dp"
         app:layout_constraintBottom_toBottomOf="@id/vaccinationBtn"
         app:layout_constraintEnd_toEndOf="parent"
@@ -64,6 +64,7 @@
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_gravity="center"
+        android:layout_marginTop="10dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:padding="0dp"
@@ -86,6 +87,7 @@
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_gravity="center"
+        android:layout_marginTop="10dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:padding="0dp"
@@ -108,6 +110,7 @@
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_gravity="center"
+        android:layout_marginTop="10dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:padding="0dp"
@@ -130,6 +133,7 @@
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_gravity="center"
+        android:layout_marginTop="10dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:padding="0dp"
@@ -138,7 +142,6 @@
         android:textSize="12sp"
         app:backgroundTint="@color/secondary"
         app:cornerRadius="6dp"
-        app:layout_constraintBottom_toTopOf="navBar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -160,7 +163,9 @@
             android:id="@+id/bottomAppBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/secondary"
             app:layout_constraintTop_toBottomOf="@id/quarantineCenterBtn"
+            app:fabCradleRoundedCornerRadius="20dp"
             android:layout_gravity="bottom">
 
             <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -169,7 +174,10 @@
                 android:layout_height="match_parent"
                 android:layout_marginEnd="16dp"
                 app:menu="@menu/bottom_nav_menu"
-                android:outlineSpotShadowColor="@android:color/transparent"/>
+                android:background="@android:color/transparent"
+                android:outlineSpotShadowColor="@android:color/transparent"
+                app:itemTextColor="@color/white"
+                app:itemIconTint="@drawable/navbar_icon_color"/>
 
         </com.google.android.material.bottomappbar.BottomAppBar>
 

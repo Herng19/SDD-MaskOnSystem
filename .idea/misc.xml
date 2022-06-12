@@ -4,9 +4,20 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/MaskOn/app/src/main/res/drawable/border_btn.xml" value="0.279" />
+        <entry key="..\:/MaskOn/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.2405" />
+        <entry key="..\:/MaskOn/app/src/main/res/drawable/ic_baseline_masks_24.xml" value="0.2405" />
+        <entry key="..\:/MaskOn/app/src/main/res/drawable/ic_baseline_more_vert_24.xml" value="0.2405" />
+        <entry key="..\:/MaskOn/app/src/main/res/drawable/ic_baseline_qr_code_scanner_24.xml" value="0.2405" />
+        <entry key="..\:/MaskOn/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.2155" />
+        <entry key="..\:/MaskOn/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.1445" />
+        <entry key="..\:/MaskOn/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2155" />
+        <entry key="..\:/MaskOn/app/src/main/res/drawable/ic_mask.xml" value="0.2405" />
+        <entry key="..\:/MaskOn/app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.2155" />
+        <entry key="..\:/MaskOn/app/src/main/res/drawable/navbar_icon_color.xml" value="0.1395" />
         <entry key="..\:/MaskOn/app/src/main/res/drawable/table_border_radius.xml" value="0.279" />
+        <entry key="..\:/MaskOn/app/src/main/res/drawable/vaccination.xml" value="0.2145" />
         <entry key="..\:/MaskOn/app/src/main/res/layout/CenterView/quarantine_center_list.xml" value="0.26268115942028986" />
-        <entry key="..\:/MaskOn/app/src/main/res/layout/activity_main.xml" value="0.176" />
+        <entry key="..\:/MaskOn/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/MaskOn/app/src/main/res/layout/center_information.xml" value="0.26268115942028986" />
         <entry key="..\:/MaskOn/app/src/main/res/layout/fragment_dashboard.xml" value="0.144" />
         <entry key="..\:/MaskOn/app/src/main/res/layout/fragment_home.xml" value="0.10389055151774262" />
@@ -18,6 +29,9 @@
         <entry key="..\:/MaskOn/app/src/main/res/layouts/CenterView/layout/card_view.xml" value="0.25" />
         <entry key="..\:/MaskOn/app/src/main/res/layouts/CenterView/layout/center_information.xml" value="0.2" />
         <entry key="..\:/MaskOn/app/src/main/res/layouts/CenterView/layout/quarantine_center_list.xml" value="0.1" />
+        <entry key="..\:/MaskOn/app/src/main/res/layouts/CenterView/layout/user_view_center_list.xml" value="0.161231884057971" />
+        <entry key="..\:/MaskOn/app/src/main/res/layouts/LoginView/drawable/ic_baseline_account_circle_24.xml" value="0.2405" />
+        <entry key="..\:/MaskOn/app/src/main/res/menu/bottom_nav_menu.xml" value="0.27447916666666666" />
         <entry key="..\:/SDW2/app/src/main/res/layout/activity_main.xml" value="0.22" />
       </map>
     </option>

@@ -15,7 +15,7 @@ import com.example.maskon.model.DBMain;
 
 import java.util.ArrayList;
 
-public class UserQuarantineCenterList extends AppCompatActivity {
+public class UserViewCenterList extends AppCompatActivity {
     DBMain dbMain;
     SQLiteDatabase sqLiteDatabase;
     RecyclerView recyclerView;
@@ -26,7 +26,7 @@ public class UserQuarantineCenterList extends AppCompatActivity {
     //function to call all other functions in this class when first call
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_user_quarantine_center_list);
+        setContentView(R.layout.user_view_center_list);
 
         centerRecord = new CenterRecord();
         dbMain=new DBMain(this);
@@ -37,7 +37,7 @@ public class UserQuarantineCenterList extends AppCompatActivity {
 
     //function to display all centers for user
     private void displayCenter() {
-        centerRecord.setContext(UserQuarantineCenterList.this);
+        centerRecord.setContext(UserViewCenterList.this);
         Cursor cursor=centerRecord.readCenter();
         ArrayList<CenterRecord> centers=new ArrayList<>();
         if(cursor.getCount() == 0){

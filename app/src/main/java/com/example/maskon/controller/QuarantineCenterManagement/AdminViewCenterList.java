@@ -18,7 +18,7 @@ import com.example.maskon.model.DBMain;
 
 import java.util.ArrayList;
 
-public class AdminQuarantineCenterList extends AppCompatActivity {
+public class AdminViewCenterList extends AppCompatActivity {
 DBMain dbMain;
 SQLiteDatabase sqLiteDatabase;
 RecyclerView recyclerView;
@@ -30,13 +30,13 @@ CenterRecord centerRecord;
     //function to call all other functions in this class when first call
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_admin_quarantine_center_list);
+        setContentView(R.layout.admin_view_center_list);
 
         userBtn=(Button) findViewById(R.id.useCenterList);
         userBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(AdminQuarantineCenterList.this, UserQuarantineCenterList.class);
+                Intent intent = new Intent(AdminViewCenterList.this, UserViewCenterList.class);
                 startActivity(intent);
             }
         });
@@ -51,7 +51,7 @@ CenterRecord centerRecord;
 
     //function to display all centers for admin
     private void displayCenter() {
-        centerRecord.setContext(AdminQuarantineCenterList.this);
+        centerRecord.setContext(AdminViewCenterList.this);
         Cursor cursor = centerRecord.readCenter();
         ArrayList<CenterRecord> centers=new ArrayList<>();
         if(cursor.getCount() == 0){
@@ -86,7 +86,7 @@ CenterRecord centerRecord;
         addBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(AdminQuarantineCenterList.this, AddNewCenter.class);
+                Intent intent = new Intent(AdminViewCenterList.this, AddNewCenter.class);
                 startActivity(intent);
             }
         });

@@ -8,7 +8,6 @@ import android.Manifest;
 import android.content.ContentValues;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
@@ -30,7 +29,6 @@ import java.io.ByteArrayOutputStream;
 public class AddNewCenter extends AppCompatActivity {
 //variable declaration
 DBMain dbmain;
-SQLiteDatabase sqLiteDatabase;
 ImageView centerImage;
 EditText centerName, centerAddress, centerPhoneNum, centerPIC, centerEmail, centerMaxCap, centerCurrCap;
 Button submit, updateBtn;
@@ -45,9 +43,10 @@ String[]storagePermission;
 
 
     @Override
+    //function that execute functions in this class when this class is first create
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add_new_center);
+        setContentView(R.layout.add_new_center);
         cameraPermission=new String[]{Manifest.permission.CAMERA,Manifest.permission.WRITE_EXTERNAL_STORAGE};
         storagePermission=new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE};
 
@@ -187,7 +186,7 @@ String[]storagePermission;
                     centerPhoneNum.setText("");
                     centerMaxCap.setText("");
                     centerCurrCap.setText("");
-                    Intent intent = new Intent(AddNewCenter.this, AdminQuarantineCenterList.class);
+                    Intent intent = new Intent(AddNewCenter.this, AdminViewCenterList.class);
                     startActivity(intent);
                 } catch(Exception e){
                     Toast.makeText(AddNewCenter.this, "Error when inserting data, " + e, Toast.LENGTH_SHORT).show();
@@ -225,7 +224,7 @@ String[]storagePermission;
 
                     updateBtn.setVisibility(View.GONE);
                     submit.setVisibility(View.VISIBLE);
-                    Intent intent = new Intent(AddNewCenter.this, AdminQuarantineCenterList.class);
+                    Intent intent = new Intent(AddNewCenter.this, AdminViewCenterList.class);
                     startActivity(intent);
                 }catch(Exception e){
                     Toast.makeText(AddNewCenter.this, "Update Failed" + e, Toast.LENGTH_SHORT).show();
@@ -269,7 +268,7 @@ String[]storagePermission;
                     if(camera_accept&&storage_accept){
                         pickFromGallery();
                     }else{
-                        Toast.makeText(this, "Enable camera and storage permission", Toast.LENGTH_SHORT);
+                        Toast.makeText(this, "Enable camera and storage permission", Toast.LENGTH_SHORT).show();
 
                     }
                 }
@@ -281,7 +280,7 @@ String[]storagePermission;
                     if(storage_accept){
                         pickFromGallery();
                     }else{
-                        Toast.makeText(this, "Please enable storage permission",Toast.LENGTH_SHORT);
+                        Toast.makeText(this, "Please enable storage permission",Toast.LENGTH_SHORT).show();
                     }
                 }
             }
