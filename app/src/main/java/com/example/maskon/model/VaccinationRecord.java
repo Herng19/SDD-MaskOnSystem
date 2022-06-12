@@ -1,4 +1,4 @@
 package com.example.maskon.model;
 
-public class Vaccination {
+public class VaccinationRecord {
 }
