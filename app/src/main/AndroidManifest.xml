@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Maskon">
         <activity
+            android:name=".register_success"
+            android:exported="false" />
+        <activity
             android:name=".registered"
             android:exported="false" />
         <activity
