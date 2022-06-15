@@ -16,25 +16,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b13391db-ee48-41a5-9aa9-aca91d7c7667" name="Default Changelist" comment="done all function for admin CRUD and user view only">
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/font/poppins.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/font_certs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/preloaded_fonts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/controller/MovementTracementManagement/CheckInMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/controller/MovementTracementManagement/CheckInMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/controller/MovementTracementManagement/CheckedOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/controller/MovementTracementManagement/CheckedOut.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/controller/MovementTracementManagement/MovementHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/controller/MovementTracementManagement/MovementHistory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/controller/MovementTracementManagement/ScanQRCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/controller/MovementTracementManagement/ScanQRCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/controller/MovementTracementManagement/StaffTracement.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/controller/MovementTracementManagement/StaffTracement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/controller/MovementTracementManagement/UserTracement.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maskon/controller/MovementTracementManagement/UserTracement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layouts/MovementView/layout/activity_check_in_menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layouts/MovementView/layout/activity_check_in_menu.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layouts/MovementView/layout/activity_checked_out.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layouts/MovementView/layout/activity_checked_out.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layouts/MovementView/layout/activity_movement_history.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layouts/MovementView/layout/activity_movement_history.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layouts/MovementView/layout/activity_scan_qrcode.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layouts/MovementView/layout/activity_scan_qrcode.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layouts/MovementView/layout/activity_staff_tracement.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layouts/MovementView/layout/activity_staff_tracement.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layouts/MovementView/layout/activity_user_tracement.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layouts/MovementView/layout/activity_user_tracement.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +30,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[371e9df8]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\Kamal\.android\avd\Pixel_2_API_29.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -70,8 +58,8 @@
       <list>
         <option value="layoutResourceFile" />
         <option value="Class" />
-        <option value="valueResourceFile" />
         <option value="resourceFile" />
+        <option value="valueResourceFile" />
       </list>
     </option>
   </component>
