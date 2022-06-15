@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/darkblue"
+    android:padding="20dp"
+    tools:context=".view.QuarantineRecordView.edit_quarantine_details">
+
+    //nav top button
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="90dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            app:srcCompat="@drawable/maskon" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/text_risk"
+            app:srcCompat="@drawable/man" />
+
+    </RelativeLayout>
+
+    //page title
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Edit Quarantine Details"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    //layout for both form
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+            //quarantine details form
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="20dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Personal Information"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="15dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Name"
+                        android:textColor="@color/white" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Ali bin Ahmad"
+                        android:background="@color/white"
+                        android:layout_marginBottom="20dp"
+                        android:padding="5dp"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Phone Number"
+                        android:textColor="@color/white" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:hint="0103239756"
+                        android:background="@color/white"
+                        android:layout_marginBottom="20dp"
+                        android:padding="5dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="IC Number"
+                        android:textColor="@color/white" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="931217-01-1937"
+                        android:background="@color/white"
+                        android:layout_marginBottom="20dp"
+                        android:padding="5dp"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Address"
+                        android:textColor="@color/white" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="1-6 Taman Bukit Permai 2, Hulu Langat 56100 Selangor"
+                        android:background="@color/white"
+                        android:layout_marginBottom="20dp"
+                        android:padding="5dp"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Test Result"
+                        android:textColor="@color/white" />
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Positive"
+                            android:textColor="@color/white"
+                            android:buttonTint="@color/white"
+                            />
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Negative"
+                            android:textColor="@color/white"
+                            android:buttonTint="@color/white"
+                            />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            //quarantine information form
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Quarantine information"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="15dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Date Start of Quarantine"
+                        android:textColor="@color/white" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:layout_marginBottom="20dp"
+                        android:inputType="date"
+                        android:drawableRight="@drawable/calendar_vec"
+                        android:padding="5dp"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Date End of Quarantine"
+                        android:textColor="@color/white"
+                        />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:layout_marginBottom="20dp"
+                        android:inputType="date"
+                        android:drawableRight="@drawable/calendar_vec"
+                        android:padding="5dp"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Quarantine Place"
+                        android:textColor="@color/white"
+                        android:layout_marginBottom="10dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:layout_marginBottom="15dp"
+                        >
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/dropdownLocation"
+                            >
+                        </Spinner>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="Submit"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/btn"
+                    android:textColor="@color/white"
+                    />
+
+            </LinearLayout>
+
+
+
+
+            //Floating button
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                //background nav bottom
+                <com.google.android.material.bottomappbar.BottomAppBar
+                    android:id="@+id/bottomAppBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:fabCradleRoundedCornerRadius="20dp"
+                    app:fabCradleVerticalOffset="10dp"
+                    android:backgroundTint="@color/darkblue"
+                    android:layout_marginTop="40dp">
+
+                    <com.google.android.material.bottomnavigation.BottomNavigationView
+                        android:id="@+id/bottomNavigationView"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/darkblue"
+                        app:elevation="0dp"
+                        app:menu="@menu/bottom_nav_menu_homepage">
+
+                    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+                </com.google.android.material.bottomappbar.BottomAppBar>
+
+
+                //center button nav
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/lilac"
+                    android:src="@drawable/ic_qrcode"
+                    app:layout_anchor="@id/bottomAppBar"
+                    app:tint="@color/white" />
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</LinearLayout>

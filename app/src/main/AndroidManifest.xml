@@ -10,6 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Maskon">
         <activity
+            android:name=".homepg_quarantine_admin"
+            android:exported="false" />
+        <activity
+            android:name=".view.QuarantineRecordView.admin_quarantine_details"
+            android:exported="false" />
+        <activity
+            android:name=".view.QuarantineRecordView.view_quarantine_details"
+            android:exported="false" />
+        <activity
+            android:name=".view.QuarantineRecordView.edit_quarantine_details"
+            android:exported="false" />
+        <activity
+            android:name=".view.QuarantineRecordView.add_quarantine_details"
+            android:exported="false" />
+        <activity
             android:name=".UserTracement"
             android:exported="false" />
         <activity

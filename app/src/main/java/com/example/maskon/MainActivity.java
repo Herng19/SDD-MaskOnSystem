@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.maskon.view.QuarantineRecordView.Homepg_Quarantine;
+import com.example.maskon.view.QuarantineRecordView.homepg_quarantine;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         btnQuarantine.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, Homepg_Quarantine.class);
+                Intent intent = new Intent(MainActivity.this, homepg_quarantine.class);
                 startActivity(intent);
             }
         });

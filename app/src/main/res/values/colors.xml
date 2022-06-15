@@ -9,4 +9,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="lilac">#98b2ff</color>
     <color name="darkblue">#115395</color>
+    <color name="bcg">#1073B6</color>
+    <color name="btn">#120C48</color>
+    <color name="red">#FC1A1A</color>
+    <color name="yellow">#FFFA8C</color>
 </resources>
