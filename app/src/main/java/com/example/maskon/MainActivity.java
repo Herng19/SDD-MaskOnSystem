@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.maskon.controller.InformationManagement.activities.InformationMain;
 import com.example.maskon.controller.QuarantineCenterManagement.AdminViewCenterList;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -27,12 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
         findId();
         navigation();
-        centerBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                navigate(AdminViewCenterList.class);
-            }
-        });
+        setOnclick();
     }
 
     private void findId(){
@@ -67,6 +63,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+    }
+
+    private void navigate(Class destination){
+        Intent intent = new Intent(this, destination);
+        startActivity(intent);
+    }
+
+    private void setOnclick(){
         //navigation for qrCode
         qrCode.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -74,11 +79,23 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent();
             }
         });
-    }
 
-    private void navigate(Class destination){
-        Intent intent = new Intent(this, destination);
-        startActivity(intent);
+        //navigation for center button
+        centerBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navigate(AdminViewCenterList.class);
+            }
+        });
+
+        //navigation for information
+        informationBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navigate(InformationMain.class);
+            }
+        });
+
     }
 
 }

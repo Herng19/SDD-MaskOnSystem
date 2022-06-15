@@ -14,6 +14,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Maskon">
         <activity
+            android:name=".controller.InformationManagement.activities.InformationMain"
+            android:exported="true"
+            android:parentActivityName=".controller.QuarantineCenterManagement.AdminViewCenterList"/>
+        <activity
+            android:name=".controller.InformationManagement.activities.QuestionsActivity"
+            android:exported="true"
+            android:parentActivityName=".controller.QuarantineCenterManagement.AdminViewCenterList"/>
+        <activity
+            android:name=".controller.InformationManagement.activities.QuestionsActivityRecycler"
+            android:exported="true"
+            android:parentActivityName=".controller.QuarantineCenterManagement.AdminViewCenterList"/>
+        <activity
             android:name=".controller.QuarantineCenterManagement.UserViewCenterList"
             android:exported="true"
             android:parentActivityName=".controller.QuarantineCenterManagement.AdminViewCenterList"/>

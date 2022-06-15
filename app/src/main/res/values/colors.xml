@@ -10,4 +10,12 @@
     <color name="primary">#1073B6</color>
     <color name="secondary">#115495</color>
     <color name="grey">#B8B8B8</color>
+    <color name="title">#3983FE</color>
+    <color name="back">#ECEFF0</color>
+    <color name="red">#FFFF0000</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="gray">#FFaaaaaa</color>
+    <color name="gray2">#aaaaaaaa</color>
 </resources>

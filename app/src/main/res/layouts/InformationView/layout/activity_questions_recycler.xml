@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/title"
+        android:layout_weight="3">
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_margin="15dp"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:src="@drawable/reg_title_back"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:text="@string/questions"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:typeface="normal"
+            android:gravity="center"
+            tools:ignore="SpUsage"/>
+        <TextView
+            android:layout_margin="10dp"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:background="@color/back"
+        android:layout_height="0dp"
+        android:layout_weight="38">
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/gray"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="@color/white"
+        android:divider="@drawable/card_back">
+
+        <Button
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:text="Cancel"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:background="@drawable/btn_cancel"
+            android:layout_toLeftOf="@+id/submit_btn"
+            android:textColor="@color/black"
+            />
+        <Button
+            android:id="@+id/submit_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:text="Submit"
+            android:background="@drawable/btn_submit"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+</LinearLayout>
