@@ -60,8 +60,7 @@ public class MainActivity extends AppCompatActivity {
                         return true;
 
                     case R.id.profile:
-                        Intent intent = new Intent(MainActivity.this, AdminViewCenterList.class);
-                        startActivity(intent);
+                        Toast.makeText(MainActivity.this, "profile", Toast.LENGTH_SHORT).show();
                         return true;
                 }
                 return true;
