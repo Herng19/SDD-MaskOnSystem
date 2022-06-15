@@ -39,6 +39,23 @@
         <entry key="..\:/MaskOn/app/src/main/res/layouts/LoginView/drawable/ic_baseline_account_circle_24.xml" value="0.2405" />
         <entry key="..\:/MaskOn/app/src/main/res/menu/bottom_nav_menu.xml" value="0.27447916666666666" />
         <entry key="..\:/SDW2/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/Kamal/AndroidStudioProjects/SDD-MaskOnSystem/app/src/main/res/drawable/border_custom.xml" value="0.186" />
+        <entry key="..\:/Users/Kamal/AndroidStudioProjects/SDD-MaskOnSystem/app/src/main/res/drawable/border_custom2.xml" value="0.186" />
+        <entry key="..\:/Users/Kamal/AndroidStudioProjects/SDD-MaskOnSystem/app/src/main/res/drawable/btn_bg.xml" value="0.1" />
+        <entry key="..\:/Users/Kamal/AndroidStudioProjects/SDD-MaskOnSystem/app/src/main/res/drawable/btn_cancel.xml" value="0.1" />
+        <entry key="..\:/Users/Kamal/AndroidStudioProjects/SDD-MaskOnSystem/app/src/main/res/drawable/ic_baseline_account_circle_24.xml" value="0.1" />
+        <entry key="..\:/Users/Kamal/AndroidStudioProjects/SDD-MaskOnSystem/app/src/main/res/drawable/text_name.xml" value="0.1" />
+        <entry key="..\:/Users/Kamal/AndroidStudioProjects/SDD-MaskOnSystem/app/src/main/res/drawable/text_risk.xml" value="0.1565" />
+        <entry key="..\:/Users/Kamal/AndroidStudioProjects/SDD-MaskOnSystem/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Kamal/AndroidStudioProjects/SDD-MaskOnSystem/app/src/main/res/layouts/CenterView/layout/add_new_center.xml" value="0.25" />
+        <entry key="..\:/Users/Kamal/AndroidStudioProjects/SDD-MaskOnSystem/app/src/main/res/layouts/CenterView/layout/admin_view_center_list.xml" value="0.25" />
+        <entry key="..\:/Users/Kamal/AndroidStudioProjects/SDD-MaskOnSystem/app/src/main/res/layouts/CenterView/layout/card_view.xml" value="0.25" />
+        <entry key="..\:/Users/Kamal/AndroidStudioProjects/SDD-MaskOnSystem/app/src/main/res/layouts/MovementView/layout/activity_check_in_menu.xml" value="0.25" />
+        <entry key="..\:/Users/Kamal/AndroidStudioProjects/SDD-MaskOnSystem/app/src/main/res/layouts/MovementView/layout/activity_checked_out.xml" value="0.25" />
+        <entry key="..\:/Users/Kamal/AndroidStudioProjects/SDD-MaskOnSystem/app/src/main/res/layouts/MovementView/layout/activity_movement_history.xml" value="0.25" />
+        <entry key="..\:/Users/Kamal/AndroidStudioProjects/SDD-MaskOnSystem/app/src/main/res/layouts/MovementView/layout/activity_scan_qrcode.xml" value="0.25" />
+        <entry key="..\:/Users/Kamal/AndroidStudioProjects/SDD-MaskOnSystem/app/src/main/res/layouts/MovementView/layout/activity_staff_tracement.xml" value="0.25" />
+        <entry key="..\:/Users/Kamal/AndroidStudioProjects/SDD-MaskOnSystem/app/src/main/res/layouts/MovementView/layout/activity_user_tracement.xml" value="0.264" />
       </map>
     </option>
   </component>
