@@ -4,22 +4,18 @@
 
         //Icon for home
         <item android:id="@+id/miHome"
-            android:title="Home"
-            android:icon="@drawable/ic_home"/>
+            android:title="Home"/>
 
          //Icon for masks
          <item android:id="@+id/miMask"
-             android:title="Quarantine"
-             android:icon="@drawable/ic_masks"/>
+             android:title="Quarantine"/>
 
          //Icon for notify
         <item android:id="@+id/miNotify"
-            android:title="Notification"
-            android:icon="@drawable/ic_notifications"/>
+            android:title="Notification"/>
 
         //Icon for person
         <item android:id="@+id/miPerson"
-            android:title="Profile"
-            android:icon="@drawable/ic_person"/>
+            android:title="Profile"/>
 
 </menu>

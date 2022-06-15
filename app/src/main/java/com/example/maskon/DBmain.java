@@ -15,7 +15,7 @@ public class DBmain extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase DB) {
-        DB.execSQL("create Table profile()");
+
     }
 
     @Override

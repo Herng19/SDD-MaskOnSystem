@@ -39,14 +39,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Object button
         //Intent intention
-        Button btnQuarantine = findViewById(R.id.button2);
-        btnQuarantine.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, Homepg_Quarantine.class);
-                startActivity(intent);
-            }
-        });
+
     }
 
 
