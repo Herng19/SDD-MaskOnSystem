@@ -28,7 +28,17 @@
                     android:id="@+id/button10"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="134dp"
+                    android:layout_marginEnd="200dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="update"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <Button
+                    android:id="@+id/button11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="84dp"
                     android:layout_marginBottom="16dp"
                     android:text="home"
                     app:layout_constraintBottom_toBottomOf="parent"
