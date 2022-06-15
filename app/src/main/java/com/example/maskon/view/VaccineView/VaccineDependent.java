@@ -43,7 +43,14 @@ public class VaccineDependent extends AppCompatActivity {
             }
         });
 
-
+        //Move to home page
+        Button btnOpenNext = (Button) findViewById(R.id.btn_next);
+        btnOpenNext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(VaccineDependent.this, register_success.class));
+            }
+        });
 
         //Move to home page
         Button btnOpenHome = (Button) findViewById(R.id.btn_cancelDep);

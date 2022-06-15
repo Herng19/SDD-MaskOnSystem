@@ -18,14 +18,6 @@ import java.util.ArrayList;
 
 public class register_success extends AppCompatActivity {
 
-    RecyclerView recycleView;
-    FloatingActionButton btn_SubmitDep;
-
-    //Initialize
-    VaccinationRecord myDB;
-    ArrayList<String> _id, full_name,  relation,  phone_number,  current_address;
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,36 +34,8 @@ public class register_success extends AppCompatActivity {
 
         //Initialize
 
-        myDB = new VaccinationRecord(register_success.this);
-        _id = new ArrayList<>();
-        full_name = new ArrayList<>();
-        relation = new ArrayList<>();
-        phone_number = new ArrayList<>();
-        current_address = new ArrayList<>();
-
-        //call method
-        storeDataInArrays();
 
     }
 
-    //new method to display data
-     void storeDataInArrays(){
 
-        Cursor cursor = myDB.readAllData();
-        //check cursor
-        if(cursor.getCount() == 0){
-            Toast.makeText(this, "No data.", Toast.LENGTH_SHORT).show();
-        }else{
-            while (cursor.moveToNext()){
-                _id.add(cursor.getString(0));
-                full_name.add(cursor.getString(1));
-                relation.add(cursor.getString(2));
-                phone_number.add(cursor.getString(3));
-                current_address.add(cursor.getString(4));
-
-            }
-        }
-
-
-     }
 }

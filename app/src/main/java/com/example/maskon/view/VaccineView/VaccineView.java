@@ -33,8 +33,8 @@ public class VaccineView extends AppCompatActivity {
         });
 
         //move to DigitalCert page
-        Button btnOpenDigCert = (Button) findViewById(R.id.btn_Certificate);
-        btnOpenDigCert.setOnClickListener(new View.OnClickListener() {
+        Button btnOpenDigitalCert = (Button) findViewById(R.id.btn_Certificate);
+        btnOpenDigitalCert.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(VaccineView.this, VaccineCertificate.class));

@@ -103,7 +103,7 @@
             </androidx.cardview.widget.CardView>
 
             <Button
-                android:id="@+id/btn_HomeDigi"
+                android:id="@+id/btn_HomeDigital"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="69dp"

@@ -19,7 +19,7 @@ public class VaccineCertificate extends AppCompatActivity {
 
 
         //Move to home page
-        Button btnHomeDigit = (Button) findViewById(R.id.btn_HomeDigi);
+        Button btnHomeDigit = (Button) findViewById(R.id.btn_HomeDigital);
         btnHomeDigit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
