@@ -17,19 +17,103 @@
             android:id="@+id/textView28"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="104dp"
+            android:layout_marginTop="38dp"
+            android:layout_marginEnd="104dp"
+            android:layout_marginBottom="83dp"
             android:text="MANAGE DEPENDENT"
             android:textColor="#FFFFFF"
             android:textSize="20sp"
             android:textStyle="bold"
-            tools:layout_editor_absoluteX="104dp"
-            tools:layout_editor_absoluteY="38dp" />
+            app:layout_constraintBottom_toTopOf="@+id/cardView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/AddDependent_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="108dp"
+            android:layout_marginTop="63dp"
+            android:layout_marginEnd="108dp"
+            android:backgroundTint="#45b610"
+            android:text="Add New Dependent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.666"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView" />
 
         <androidx.cardview.widget.CardView
-            android:layout_width="350"
-            android:layout_height="350"
+            android:id="@+id/cardView"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:layout_marginEnd="34dp"
+            android:layout_marginBottom="63dp"
+            android:background="@color/white"
             app:cardCornerRadius="10dp"
-            tools:layout_editor_absoluteX="27dp"
-            tools:layout_editor_absoluteY="148dp">
+            app:layout_constraintBottom_toTopOf="@+id/AddDependent_btn"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="43dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="269dp"
+                    android:layout_marginBottom="314dp"
+                    android:text="Name :"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName17"
+                    android:layout_width="165dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="41dp"
+                    android:layout_marginTop="34dp"
+                    android:layout_marginEnd="144dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Ahmad bin Ali"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView41"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="42dp"
+                    android:layout_marginTop="247dp"
+                    android:layout_marginEnd="255dp"
+                    android:text="Relation : "
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -37,152 +121,159 @@
 
                 <Button
                     android:id="@+id/button12"
-                    android:layout_width="80dp"
-                    android:layout_height="34dp"
+                    android:layout_width="82dp"
+                    android:layout_height="49dp"
+                    android:layout_marginStart="240dp"
+                    android:layout_marginTop="53dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginBottom="263dp"
                     android:backgroundTint="#255BB8"
                     android:text="Update"
                     android:textSize="10sp"
-                    tools:layout_editor_absoluteX="240dp"
-                    tools:layout_editor_absoluteY="53dp" />
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/button13"
+                    android:layout_width="81dp"
+                    android:layout_height="49dp"
+                    android:layout_marginTop="96dp"
+                    android:layout_marginEnd="28dp"
+                    android:backgroundTint="#BA1B1B"
+                    android:text="Delete"
+                    android:textSize="10sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView42"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="42dp"
+                    android:layout_marginTop="178dp"
+                    android:text="Name :"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="49dp"
+                    android:layout_marginStart="42dp"
+                    android:layout_marginTop="194dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Fatimah binti Ali"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="49dp"
+                    android:layout_marginStart="42dp"
+                    android:layout_marginTop="263dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Younger Sister"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/button15"
+                    android:layout_width="80dp"
+                    android:layout_height="49dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginBottom="50dp"
+                    android:backgroundTint="#BA1B1B"
+                    android:text="delete"
+                    android:textSize="10sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/button14"
+                    android:layout_width="80dp"
+                    android:layout_height="49dp"
+                    android:layout_marginTop="201dp"
+                    android:layout_marginEnd="30dp"
+                    android:backgroundTint="#255BB8"
+                    android:text="Update"
+                    android:textSize="10sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
                 <TextView
                     android:id="@+id/textView39"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="41dp"
+                    android:layout_marginTop="86dp"
                     android:text="Relation : "
                     android:textSize="12sp"
-                    tools:layout_editor_absoluteX="43dp"
-                    tools:layout_editor_absoluteY="88dp" />
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
-                <EditText
-                    android:id="@+id/editTextTextPersonName17"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="Ahmad bin Ali"
-                    android:textSize="14sp"
-                    tools:layout_editor_absoluteX="44dp"
-                    tools:layout_editor_absoluteY="36dp" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
                 <EditText
                     android:id="@+id/editTextTextPersonName18"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="165dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="42dp"
+                    android:layout_marginTop="109dp"
                     android:ems="10"
                     android:inputType="textPersonName"
                     android:text="Younger Brother"
                     android:textSize="14sp"
-                    tools:layout_editor_absoluteX="42dp"
-                    tools:layout_editor_absoluteY="104dp" />
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    tools:layout_editor_absoluteX="0dp"
-                    tools:layout_editor_absoluteY="0dp">
-
-                    <EditText
-                        android:id="@+id/editTextTextPersonName20"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="textPersonName"
-                        android:text="Younger Sister"
-                        android:textSize="14sp"
-                        tools:layout_editor_absoluteX="42dp"
-                        tools:layout_editor_absoluteY="263dp" />
-
-                    <Button
-                        android:id="@+id/button14"
-                        android:layout_width="80dp"
-                        android:layout_height="34dp"
-                        android:backgroundTint="#255BB8"
-                        android:text="Update"
-                        android:textSize="10sp"
-                        tools:layout_editor_absoluteX="240dp"
-                        tools:layout_editor_absoluteY="216dp" />
-
-                    <TextView
-                        android:id="@+id/textView41"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Relation : "
-                        android:textSize="12sp"
-                        tools:layout_editor_absoluteX="42dp"
-                        tools:layout_editor_absoluteY="247dp" />
-
-                    <EditText
-                        android:id="@+id/editTextTextPersonName19"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="textPersonName"
-                        android:text="Fatimah binti Ali"
-                        android:textSize="14sp"
-                        tools:layout_editor_absoluteX="42dp"
-                        tools:layout_editor_absoluteY="194dp" />
-
-                    <TextView
-                        android:id="@+id/textView42"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Name :"
-                        android:textSize="12sp"
-                        tools:layout_editor_absoluteX="42dp"
-                        tools:layout_editor_absoluteY="178dp" />
-
-                    <Button
-                        android:id="@+id/button15"
-                        android:layout_width="80dp"
-                        android:layout_height="34dp"
-                        android:backgroundTint="#BA1B1B"
-                        android:text="delete"
-                        android:textSize="10sp"
-                        tools:layout_editor_absoluteX="240dp"
-                        tools:layout_editor_absoluteY="247dp" />
-
-                    <TextView
-                        android:id="@+id/textView33"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Name :"
-                        android:textSize="12sp"
-                        tools:layout_editor_absoluteX="43dp"
-                        tools:layout_editor_absoluteY="20dp" />
-
-                    <androidx.constraintlayout.widget.Barrier
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:barrierDirection="top"
-                        tools:layout_editor_absoluteX="87dp"
-                        tools:layout_editor_absoluteY="159dp" />
-
-                    <Button
-                        android:id="@+id/button13"
-                        android:layout_width="80dp"
-                        android:layout_height="34dp"
-                        android:backgroundTint="#BA1B1B"
-                        android:text="Delete"
-                        android:textSize="10sp"
-                        tools:layout_editor_absoluteX="240dp"
-                        tools:layout_editor_absoluteY="87dp" />
-                </androidx.constraintlayout.widget.ConstraintLayout>
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.cardview.widget.CardView>
-
-        <Button
-            android:id="@+id/button11"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="108dp"
-            android:layout_marginEnd="108dp"
-            android:backgroundTint="#45b610"
-            android:text="Add New Dependent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="563dp" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

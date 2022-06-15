@@ -20,18 +20,13 @@
         app:srcCompat="@drawable/maskon" />
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/SaveDependent_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="152dp"
-        android:layout_marginEnd="153dp"
-        android:layout_marginBottom="116dp"
         android:backgroundTint="#45b610"
         android:text="Save"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        tools:layout_editor_absoluteX="159dp"
+        tools:layout_editor_absoluteY="612dp" />
 
     <TextView
         android:id="@+id/textView27"
@@ -50,27 +45,15 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView10" />
 
     <EditText
-        android:id="@+id/editTextTextMultiLine2"
+        android:id="@+id/Address_input"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="36dp"
+        android:layout_height="50dp"
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
         app:backgroundTint="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPhone2" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="36dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:backgroundTint="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber4" />
+        tools:layout_editor_absoluteX="166dp"
+        tools:layout_editor_absoluteY="498dp" />
 
     <TextView
         android:id="@+id/textView35"
@@ -121,38 +104,40 @@
         app:layout_constraintTop_toBottomOf="@+id/textView37" />
 
     <EditText
-        android:id="@+id/editTextNumber4"
+        android:id="@+id/PassNumber_input"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginStart="6dp"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="36dp"
+        android:layout_marginEnd="34dp"
         android:ems="10"
-        android:inputType="number"
+        android:inputType="text"
         app:backgroundTint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/OriginCountry_input"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView34"
         app:layout_constraintTop_toBottomOf="@+id/textView27" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName15"
+        android:id="@+id/Gender_input"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="36dp"
+        android:layout_height="50dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:backgroundTint="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName14" />
+        tools:layout_editor_absoluteX="166dp"
+        tools:layout_editor_absoluteY="398dp" />
 
     <EditText
-        android:id="@+id/editTextPhone2"
+        android:id="@+id/PhoneNumber_input"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="36dp"
+        android:layout_height="50dp"
         android:ems="10"
         android:inputType="phone"
         app:backgroundTint="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName15" />
+        tools:layout_editor_absoluteX="166dp"
+        tools:layout_editor_absoluteY="448dp" />
 
     <TextView
         android:id="@+id/textView34"
@@ -165,5 +150,16 @@
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+    <EditText
+        android:id="@+id/OriginCountry_input"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:backgroundTint="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/PassNumber_input"
+        tools:layout_editor_absoluteX="168dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

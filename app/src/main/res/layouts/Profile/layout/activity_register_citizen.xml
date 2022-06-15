@@ -124,4 +124,15 @@
         android:inputType="number"
         tools:layout_editor_absoluteX="162dp"
         tools:layout_editor_absoluteY="315dp" />
+
+    <Button
+        android:id="@+id/button20"
+        android:layout_width="65dp"
+        android:layout_height="34dp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:text="Back"
+        android:textSize="10sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

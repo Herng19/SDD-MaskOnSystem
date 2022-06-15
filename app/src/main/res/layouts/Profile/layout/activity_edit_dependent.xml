@@ -26,7 +26,7 @@
             app:srcCompat="@drawable/maskon" />
 
         <Button
-            android:id="@+id/button9"
+            android:id="@+id/SaveDependent_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="152dp"
@@ -56,7 +56,7 @@
             app:layout_constraintTop_toBottomOf="@+id/imageView10" />
 
         <EditText
-            android:id="@+id/editTextTextMultiLine2"
+            android:id="@+id/Address_input"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="39dp"
@@ -64,17 +64,17 @@
             android:gravity="start|top"
             android:inputType="textMultiLine"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextPhone2" />
+            app:layout_constraintTop_toBottomOf="@+id/PhoneNumber_input" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName14"
+            android:id="@+id/OriginCountry_input"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="39dp"
             android:ems="10"
             android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextNumber4" />
+            app:layout_constraintTop_toBottomOf="@+id/PassNumber_input" />
 
         <TextView
             android:id="@+id/textView35"
@@ -125,7 +125,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView37" />
 
         <EditText
-            android:id="@+id/editTextNumber4"
+            android:id="@+id/PassNumber_input"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="26dp"
@@ -136,24 +136,24 @@
             app:layout_constraintTop_toBottomOf="@+id/textView27" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName15"
+            android:id="@+id/Gender_input"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="36dp"
             android:ems="10"
             android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName14" />
+            app:layout_constraintTop_toBottomOf="@+id/OriginCountry_input" />
 
         <EditText
-            android:id="@+id/editTextPhone2"
+            android:id="@+id/PhoneNumber_input"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="39dp"
             android:ems="10"
             android:inputType="phone"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName15" />
+            app:layout_constraintTop_toBottomOf="@+id/Gender_input" />
 
         <TextView
             android:id="@+id/textView34"
