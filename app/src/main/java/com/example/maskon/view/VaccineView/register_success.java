@@ -48,10 +48,14 @@ public class register_success extends AppCompatActivity {
         relation = new ArrayList<>();
         phone_number = new ArrayList<>();
         current_address = new ArrayList<>();
+
+        //call method
+        storeDataInArrays();
+
     }
 
     //new method to display data
-     void displayData(){
+     void storeDataInArrays(){
 
         Cursor cursor = myDB.readAllData();
         //check cursor
@@ -59,10 +63,11 @@ public class register_success extends AppCompatActivity {
             Toast.makeText(this, "No data.", Toast.LENGTH_SHORT).show();
         }else{
             while (cursor.moveToNext()){
-                full_name.add(cursor.getString(0));
-                relation.add(cursor.getString(0));
-                phone_number.add(cursor.getString(0));
-                current_address.add(cursor.getString(0));
+                _id.add(cursor.getString(0));
+                full_name.add(cursor.getString(1));
+                relation.add(cursor.getString(2));
+                phone_number.add(cursor.getString(3));
+                current_address.add(cursor.getString(4));
 
             }
         }
