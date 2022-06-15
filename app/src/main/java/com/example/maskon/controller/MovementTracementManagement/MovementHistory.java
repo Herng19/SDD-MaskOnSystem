@@ -1,4 +1,4 @@
-package com.example.maskon.view.MovementView;
+package com.example.maskon.controller.MovementTracementManagement;
 
 import androidx.appcompat.app.AppCompatActivity;
 

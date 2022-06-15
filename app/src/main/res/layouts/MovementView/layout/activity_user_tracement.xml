@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#1073B6"
-    tools:context=".view.MovementView.UserTracement">
+    tools:context=".controller.MovementTracementManagement.UserTracement">
 
     <ImageView
         android:id="@+id/maskon"
@@ -22,19 +22,18 @@
         app:layout_constraintVertical_bias="0.101"
         app:srcCompat="@drawable/maskon" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
-        android:background="@color/purple_500"
         android:text="Back"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button3"
         android:layout_width="309dp"
         android:layout_height="58dp"
@@ -44,12 +43,13 @@
         android:background="@drawable/btn_bg"
         android:text="Checked-in"
         android:textAllCaps="true"
+        android:textColor="#EFEAEA"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button4"
         android:layout_width="225dp"
         android:layout_height="55dp"
@@ -59,6 +59,7 @@
         android:background="@drawable/btn_bg"
         android:text="Check-out"
         android:textAllCaps="false"
+        android:textColor="#EFEAEA"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.419"
         app:layout_constraintStart_toStartOf="parent"
@@ -190,18 +191,6 @@
             android:textColor="@color/black"
             android:textSize="15sp"
             android:textStyle="bold" />
-
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Button" />
-
-        <Button
-            android:id="@+id/button5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Button" />
 
     </LinearLayout>
 

@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#1073B6"
-    tools:context=".view.MovementView.CheckedOut">
+    tools:context=".controller.MovementTracementManagement.CheckedOut">
+
     <ImageView
         android:id="@+id/maskon"
         android:layout_width="wrap_content"
@@ -21,7 +22,7 @@
         app:layout_constraintVertical_bias="0.101"
         app:srcCompat="@drawable/maskon" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -150,7 +151,7 @@
             android:layout_marginTop="440dp"
             android:layout_marginBottom="200dp"
             android:background="@drawable/text_risk"
-            android:fontFamily="sans-serif"
+            android:fontFamily="@font/poppins"
             android:text="Low Risk No Symptom"
             android:textAlignment="center"
             android:textColor="@color/black"

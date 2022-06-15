@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#1073B6"
-    tools:context=".view.MovementView.ScanQRCode">
+    tools:context=".controller.MovementTracementManagement.ScanQRCode">
 
     <ImageView
         android:id="@+id/maskon"
@@ -23,13 +23,15 @@
         app:layout_constraintVertical_bias="0.088"
         app:srcCompat="@drawable/maskon" />
 
-    <Button
-        android:id="@+id/button5"
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/purple_200"
-        android:text="Button"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="16dp" />
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="Back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
