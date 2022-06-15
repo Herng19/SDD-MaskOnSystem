@@ -72,13 +72,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setOnclick(){
-        //navigation for qrCode
-        qrCode.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent();
-            }
-        });
+
 
         //navigation for center button
         centerBtn.setOnClickListener(new View.OnClickListener() {
