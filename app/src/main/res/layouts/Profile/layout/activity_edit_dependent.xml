@@ -139,7 +139,7 @@
             android:id="@+id/editTextTextPersonName15"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="39dp"
+            android:layout_marginEnd="36dp"
             android:ems="10"
             android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="parent"
@@ -166,6 +166,16 @@
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+        <EditText
+            android:id="@+id/editTextPhone3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="phone"
+            app:backgroundTint="@color/white"
+            tools:layout_editor_absoluteX="162dp"
+            tools:layout_editor_absoluteY="435dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -202,6 +212,7 @@
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
+        app:backgroundTint="@color/white"
         tools:layout_editor_absoluteX="162dp"
         tools:layout_editor_absoluteY="481dp" />
 
@@ -211,6 +222,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
+        app:backgroundTint="@color/white"
         tools:layout_editor_absoluteX="162dp"
         tools:layout_editor_absoluteY="346dp" />
 
@@ -220,6 +232,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="number"
+        app:backgroundTint="@color/white"
         tools:layout_editor_absoluteX="162dp"
         tools:layout_editor_absoluteY="301dp" />
 
@@ -229,17 +242,9 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
+        app:backgroundTint="@color/white"
         tools:layout_editor_absoluteX="162dp"
         tools:layout_editor_absoluteY="391dp" />
-
-    <EditText
-        android:id="@+id/editTextPhone3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="phone"
-        tools:layout_editor_absoluteX="162dp"
-        tools:layout_editor_absoluteY="436dp" />
 
     <TextView
         android:id="@+id/textView40"
@@ -248,6 +253,7 @@
         android:text="Passport Number : "
         android:textColor="#FFFFFF"
         android:textStyle="bold"
+        app:backgroundTint="@color/white"
         tools:layout_editor_absoluteX="39dp"
         tools:layout_editor_absoluteY="314dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

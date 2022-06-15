@@ -131,6 +131,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="number"
+        app:backgroundTint="@color/white"
         tools:layout_editor_absoluteX="162dp"
         tools:layout_editor_absoluteY="389dp" />
 
