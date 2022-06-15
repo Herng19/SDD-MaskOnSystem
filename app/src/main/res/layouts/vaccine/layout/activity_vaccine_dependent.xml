@@ -27,7 +27,7 @@
                 android:layout_height="match_parent">
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName"
+                    android:id="@+id/full_name_input"
                     android:layout_width="314dp"
                     android:layout_height="53dp"
                     android:layout_marginStart="21dp"
@@ -35,43 +35,43 @@
                     android:layout_marginEnd="16dp"
                     android:layout_marginBottom="39dp"
                     android:ems="10"
+                    android:hint="Full Name"
+                    android:importantForAutofill="no"
                     android:inputType="textPersonName"
-                    android:text="@string/full_name"
-                    app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName2"
+                    app:layout_constraintBottom_toTopOf="@+id/relation_input"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:importantForAutofill="no" />
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName2"
+                    android:id="@+id/relation_input"
                     android:layout_width="317dp"
                     android:layout_height="54dp"
                     android:layout_marginStart="19dp"
                     android:layout_marginTop="35dp"
                     android:layout_marginEnd="17dp"
+                    android:autofillHints=""
                     android:ems="10"
+                    android:hint="Relation"
                     android:inputType="textPersonName"
-                    android:text="@string/relation"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
-                    android:autofillHints="" />
+                    app:layout_constraintTop_toBottomOf="@+id/full_name_input" />
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName5"
+                    android:id="@+id/phone_number_input"
                     android:layout_width="316dp"
                     android:layout_height="49dp"
                     android:layout_marginStart="18dp"
                     android:layout_marginTop="22dp"
                     android:layout_marginEnd="16dp"
+                    android:autofillHints=""
                     android:ems="10"
+                    android:hint="Phone Number"
                     android:inputType="textPersonName"
-                    android:text="@string/phone_number"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
-                    android:autofillHints="" />
+                    app:layout_constraintTop_toBottomOf="@+id/relation_input" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -110,19 +110,19 @@
                 android:layout_height="match_parent">
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName4"
+                    android:id="@+id/current_address_input"
                     android:layout_width="315dp"
                     android:layout_height="53dp"
                     android:layout_marginStart="19dp"
                     android:layout_marginEnd="15dp"
                     android:layout_marginBottom="88dp"
+                    android:autofillHints=""
                     android:ems="10"
+                    android:hint="Current Address"
                     android:inputType="textPersonName"
-                    android:text="@string/current_address"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    android:autofillHints="" />
+                    app:layout_constraintStart_toStartOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -130,7 +130,7 @@
                 android:layout_height="match_parent">
 
                 <Button
-                    android:id="@+id/button5"
+                    android:id="@+id/btn_SubmitDep"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="433dp"
@@ -142,7 +142,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <Button
-                    android:id="@+id/button4"
+                    android:id="@+id/btn_cancelDep"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="434dp"
@@ -150,7 +150,7 @@
                     android:layout_marginBottom="18dp"
                     android:text="@string/cancel"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/button5"
+                    app:layout_constraintEnd_toStartOf="@+id/btn_SubmitDep"
                     app:layout_constraintTop_toTopOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>

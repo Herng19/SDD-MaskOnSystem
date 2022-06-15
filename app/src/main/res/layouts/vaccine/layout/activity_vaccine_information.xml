@@ -7,59 +7,49 @@
     tools:context=".view.VaccineView.VaccineInformation"
     android:background="#1073B6">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="16dp">
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="209dp"
+        android:layout_height="301dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="101dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/covid_vaccine_01_original" />
 
-        <TextView
-            android:id="@+id/textView27"
-            android:layout_width="342dp"
-            android:layout_height="58dp"
-            android:text="We are currently in phase 1 for the national vaccination program."
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="22sp"
-            tools:layout_editor_absoluteX="34dp"
-            tools:layout_editor_absoluteY="327dp" />
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="342dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="35dp"
+        android:text="We are currently in phase 1 for the national vaccination program."
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
-        <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="209dp"
-            android:layout_height="301dp"
-            app:srcCompat="@drawable/covid_vaccine_01_original"
-            tools:layout_editor_absoluteX="101dp"
-            tools:layout_editor_absoluteY="58dp" />
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="297dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="56dp"
+        android:text="Click this button to provide additional details for your registration"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_register" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <TextView
-            android:id="@+id/textView32"
-            android:layout_width="297dp"
-            android:layout_height="32dp"
-            android:text="Click this button to provide additional details for your registration"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            tools:layout_editor_absoluteX="58dp"
-            tools:layout_editor_absoluteY="463dp" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <Button
-            android:id="@+id/button6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Register"
-            tools:layout_editor_absoluteX="148dp"
-            tools:layout_editor_absoluteY="400dp" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="157dp"
+        android:text="Register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView27" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

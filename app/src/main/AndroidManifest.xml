@@ -9,18 +9,32 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Maskon">
-        <activity
-            android:name=".register_success"
-            android:exported="false" />
-        <activity
-            android:name=".registered"
-            android:exported="false" />
+
         <activity
             android:name=".view.VaccineView.VaccineRegistration"
             android:exported="false"
             android:label="@string/title_activity_vaccine_registration" />
         <activity
+            android:name=".view.VaccineView.VaccineInformation"
+            android:exported="false"
+            android:label="@string/title_activity_vaccine_registration" />
+        <activity
+            android:name=".view.VaccineView.VaccineCertificate"
+            android:exported="false"
+            android:label="@string/title_activity_vaccine_registration" />
+        <activity
+            android:name=".view.VaccineView.VaccineDependent"
+            android:exported="false"
+            android:label="@string/title_activity_vaccine_registration" />
+        <activity
+            android:name=".view.VaccineView.register_success"
+            android:exported="false"
+            android:label="@string/title_activity_vaccine_registration" />
+        <activity
             android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.VaccineView.VaccineView"
             android:exported="true"
             android:label="@string/app_name">
             <intent-filter>

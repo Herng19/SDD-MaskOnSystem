@@ -101,6 +101,16 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
             </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/btn_HomeDigi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="69dp"
+                android:layout_marginEnd="261dp"
+                android:text="Home"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -181,17 +191,21 @@
                         android:id="@+id/textView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="44dp"
+                        android:layout_marginTop="5dp"
                         android:text="Pfizer BioTech"
-                        tools:layout_editor_absoluteX="44dp"
-                        tools:layout_editor_absoluteY="94dp" />
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView18" />
 
                     <TextView
                         android:id="@+id/textView2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginEnd="169dp"
+                        android:layout_marginBottom="17dp"
                         android:text="PfizerBioTech"
-                        tools:layout_editor_absoluteX="45dp"
-                        tools:layout_editor_absoluteY="214dp" />
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -209,42 +223,53 @@
                         android:id="@+id/textView22"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginEnd="240dp"
+                        android:layout_marginBottom="5dp"
                         android:text="Dose 2"
                         android:textColor="@color/black"
-                        tools:layout_editor_absoluteX="17dp"
-                        tools:layout_editor_absoluteY="138dp" />
+                        app:layout_constraintBottom_toTopOf="@+id/textView28"
+                        app:layout_constraintEnd_toEndOf="parent" />
 
                     <TextView
                         android:id="@+id/textView29"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginEnd="107dp"
+                        android:layout_marginBottom="9dp"
                         android:text="09:00 AM"
-                        tools:layout_editor_absoluteX="133dp"
-                        tools:layout_editor_absoluteY="160dp" />
+                        app:layout_constraintBottom_toTopOf="@+id/textView31"
+                        app:layout_constraintEnd_toEndOf="parent" />
 
                     <TextView
                         android:id="@+id/textView31"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="141dp"
+                        android:layout_marginBottom="43dp"
                         android:text="2485318E"
-                        tools:layout_editor_absoluteX="95dp"
-                        tools:layout_editor_absoluteY="188dp" />
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/textView30" />
 
                     <TextView
                         android:id="@+id/textView28"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="43dp"
+                        android:layout_marginBottom="7dp"
                         android:text="08 June 2022"
-                        tools:layout_editor_absoluteX="43dp"
-                        tools:layout_editor_absoluteY="162dp" />
+                        app:layout_constraintBottom_toTopOf="@+id/textView31"
+                        app:layout_constraintStart_toStartOf="parent" />
 
                     <TextView
                         android:id="@+id/textView30"
-                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="44dp"
+                        android:layout_marginBottom="43dp"
                         android:text="Batch :"
-                        tools:layout_editor_absoluteX="44dp"
-                        tools:layout_editor_absoluteY="188dp" />
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -255,8 +280,8 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            tools:layout_editor_absoluteX="55dp"
-            tools:layout_editor_absoluteY="90dp">
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
 
             <androidx.cardview.widget.CardView
                 android:layout_width="300dp"
