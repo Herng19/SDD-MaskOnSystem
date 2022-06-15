@@ -8,6 +8,7 @@
     tools:context=".view.ProfileView.EditDependent">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#1073B6"
@@ -31,7 +32,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="152dp"
             android:layout_marginEnd="153dp"
-            android:layout_marginBottom="116dp"
+            android:layout_marginBottom="44dp"
             android:backgroundTint="#45b610"
             android:text="Save"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -55,33 +56,12 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView10" />
 
-        <EditText
-            android:id="@+id/Address_input"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="39dp"
-            android:ems="10"
-            android:gravity="start|top"
-            android:inputType="textMultiLine"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/PhoneNumber_input" />
-
-        <EditText
-            android:id="@+id/OriginCountry_input"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="39dp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/PassNumber_input" />
-
         <TextView
             android:id="@+id/textView35"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="39dp"
-            android:layout_marginTop="27dp"
+            android:layout_marginTop="42dp"
             android:text="Origin Country : "
             android:textColor="#FFFFFF"
             android:textStyle="bold"
@@ -93,7 +73,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="39dp"
-            android:layout_marginTop="27dp"
+            android:layout_marginTop="42dp"
             android:text="Gender : "
             android:textColor="#FFFFFF"
             android:textStyle="bold"
@@ -105,7 +85,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="39dp"
-            android:layout_marginTop="27dp"
+            android:layout_marginTop="42dp"
             android:text="Phone Number :"
             android:textColor="#FFFFFF"
             android:textStyle="bold"
@@ -117,50 +97,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="39dp"
-            android:layout_marginTop="27dp"
+            android:layout_marginTop="42dp"
             android:text="Current Address :"
             android:textColor="#FFFFFF"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView37" />
 
-        <EditText
-            android:id="@+id/PassNumber_input"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="26dp"
-            android:layout_marginEnd="39dp"
-            android:ems="10"
-            android:inputType="number"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView27" />
-
-        <EditText
-            android:id="@+id/Gender_input"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="36dp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/OriginCountry_input" />
-
-        <EditText
-            android:id="@+id/PhoneNumber_input"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="39dp"
-            android:ems="10"
-            android:inputType="phone"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Gender_input" />
-
         <TextView
             android:id="@+id/textView34"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="39dp"
-            android:layout_marginTop="39dp"
+            android:layout_marginTop="42dp"
             android:text="Passport Number : "
             android:textColor="#FFFFFF"
             android:textStyle="bold"
@@ -168,14 +117,60 @@
             app:layout_constraintTop_toBottomOf="@+id/textView27" />
 
         <EditText
-            android:id="@+id/editTextPhone3"
+            android:id="@+id/ic_update"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="30dp"
             android:ems="10"
-            android:inputType="phone"
-            app:backgroundTint="@color/white"
-            tools:layout_editor_absoluteX="162dp"
-            tools:layout_editor_absoluteY="435dp" />
+            android:inputType="textPersonName"
+            android:text="Name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+        <EditText
+            android:id="@+id/state_update"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginEnd="30dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ic_update" />
+
+        <EditText
+            android:id="@+id/gender_update"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginEnd="30dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/state_update" />
+
+        <EditText
+            android:id="@+id/phone_update"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginEnd="30dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gender_update" />
+
+        <EditText
+            android:id="@+id/address_update"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginEnd="30dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/phone_update" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -191,69 +186,16 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/maskon" />
 
-    <Button
-        android:id="@+id/button10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="152dp"
-        android:layout_marginEnd="153dp"
-        android:layout_marginBottom="116dp"
-        android:backgroundTint="#45b610"
-        android:text="Save"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/editTextTextMultiLine"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:gravity="start|top"
-        android:inputType="textMultiLine"
-        app:backgroundTint="@color/white"
-        tools:layout_editor_absoluteX="162dp"
-        tools:layout_editor_absoluteY="481dp" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:backgroundTint="@color/white"
-        tools:layout_editor_absoluteX="162dp"
-        tools:layout_editor_absoluteY="346dp" />
-
-    <EditText
-        android:id="@+id/editTextNumber5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="number"
-        app:backgroundTint="@color/white"
-        tools:layout_editor_absoluteX="162dp"
-        tools:layout_editor_absoluteY="301dp" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:backgroundTint="@color/white"
-        tools:layout_editor_absoluteX="162dp"
-        tools:layout_editor_absoluteY="391dp" />
-
     <TextView
         android:id="@+id/textView40"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="314dp"
         android:text="Passport Number : "
         android:textColor="#FFFFFF"
         android:textStyle="bold"
         app:backgroundTint="@color/white"
-        tools:layout_editor_absoluteX="39dp"
-        tools:layout_editor_absoluteY="314dp" />
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

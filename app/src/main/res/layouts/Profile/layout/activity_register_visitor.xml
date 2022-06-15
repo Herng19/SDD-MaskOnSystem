@@ -17,24 +17,13 @@
             android:id="@+id/textView24"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
-            android:layout_marginTop="55dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="44dp"
             android:text="Passport Number : "
             android:textColor="#FFFFFF"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView30" />
-
-        <EditText
-            android:id="@+id/editTextTextPersonName9"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="40dp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            app:backgroundTint="@color/white"
-            app:layout_constraintEnd_toEndOf="parent"
-            tools:layout_editor_absoluteY="449dp" />
 
         <TextView
             android:id="@+id/textView25"
@@ -78,35 +67,24 @@
             android:id="@+id/textView26"
             android:layout_width="209dp"
             android:layout_height="70dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginEnd="40dp"
+            android:layout_marginEnd="36dp"
             android:text="Password should contains atleats 8 characterswith combintation of capital letters, small letters, and numbers."
             android:textColor="#FFFFFF"
             android:textSize="10sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName9" />
+            app:layout_constraintTop_toBottomOf="@+id/usernameVisitor_register" />
 
         <Button
             android:id="@+id/button8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="#45b610"
-            android:text="Register"
-            tools:layout_editor_absoluteX="160dp"
-            tools:layout_editor_absoluteY="579dp" />
-
-        <Button
-            android:id="@+id/button7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="152dp"
-            android:layout_marginEnd="153dp"
+            android:layout_marginStart="160dp"
+            android:layout_marginEnd="145dp"
             android:layout_marginBottom="104dp"
             android:backgroundTint="#45b610"
             android:text="Register"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent" />
 
         <ImageView
@@ -137,31 +115,39 @@
             app:layout_constraintTop_toBottomOf="@+id/imageView7" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName11"
+            android:id="@+id/passport_register"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="38dp"
             android:ems="10"
             android:inputType="textPersonName"
-            tools:layout_editor_absoluteX="161dp"
-            tools:layout_editor_absoluteY="360dp" />
+            android:text="Name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView30" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName12"
+            android:id="@+id/originCountry_register"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginEnd="38dp"
             android:ems="10"
             android:inputType="textPersonName"
-            tools:layout_editor_absoluteX="162dp"
-            tools:layout_editor_absoluteY="404dp" />
+            android:text="Name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/passport_register" />
 
         <EditText
-            android:id="@+id/editTextNumber"
+            android:id="@+id/usernameVisitor_register"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginEnd="38dp"
             android:ems="10"
-            android:inputType="number"
-            tools:layout_editor_absoluteX="160dp"
-            tools:layout_editor_absoluteY="315dp" />
+            android:inputType="textPersonName"
+            android:text="Name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/originCountry_register" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ImageView

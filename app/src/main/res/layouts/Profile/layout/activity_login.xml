@@ -12,8 +12,8 @@
         android:layout_height="match_parent"
         android:background="#1073B6"
         tools:context=".view.ProfileView.ManageDependent"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="0dp">
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="-158dp">
 
         <TextView
             android:id="@+id/textView21"
@@ -31,29 +31,14 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView15"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="116dp"
-            android:layout_marginEnd="116dp"
-            android:text="Do not have any account yet? "
-            android:textColor="#FFFFFF"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="661dp" />
-
-        <TextView
             android:id="@+id/textView16"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
-            android:layout_marginEnd="12dp"
-            android:layout_marginBottom="16dp"
             android:text="or"
             android:textColor="#FFFFFF"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName6"
-            app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName4" />
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="199dp"
+            tools:layout_editor_absoluteY="696dp" />
 
         <ImageView
             android:id="@+id/imageView6"
@@ -67,32 +52,19 @@
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/maskon" />
 
-        <EditText
-            android:id="@+id/editTextTextPersonName3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:layout_marginEnd="56dp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            app:backgroundTint="@color/white"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
-
         <TextView
             android:id="@+id/textView14"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="60dp"
-            android:layout_marginTop="32dp"
             android:text="Password : "
             android:textColor="#FFFFFF"
             android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="60dp"
+            tools:layout_editor_absoluteY="396dp" />
 
         <TextView
-            android:id="@+id/textView12"
+            android:id="@+id/username_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="60dp"
@@ -104,65 +76,34 @@
             app:layout_constraintTop_toBottomOf="@+id/imageView6" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/forgotPass_btn"
+            android:layout_width="102dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="96dp"
-            android:layout_marginEnd="56dp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            app:backgroundTint="@color/white"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView6" />
-
-        <EditText
-            android:id="@+id/editTextTextPersonName5"
-            android:layout_width="104dp"
-            android:layout_height="32dp"
-            android:layout_marginStart="56dp"
-            android:layout_marginEnd="251dp"
             android:ems="10"
             android:inputType="textPersonName"
             android:text="I forgot my password"
             android:textColor="#45B610"
             android:textSize="10sp"
             app:backgroundTint="#45B610"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="511dp" />
-
-        <EditText
-            android:id="@+id/editTextTextPersonName5"
-            android:layout_width="104dp"
-            android:layout_height="32dp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="I forgot my password"
-            android:textColor="#45B610"
-            android:textSize="10sp"
-            app:backgroundTint="#45B610"
-            tools:layout_editor_absoluteX="38dp"
-            tools:layout_editor_absoluteY="511dp" />
+            app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
         <Button
-            android:id="@+id/button5"
+            android:id="@+id/login_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="158dp"
-            android:layout_marginTop="24dp"
-            android:layout_marginEnd="159dp"
             android:backgroundTint="#45b610"
-            android:text="Button"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
+            android:text="Login"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="158dp"
+            tools:layout_editor_absoluteY="451dp" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName4"
+            android:id="@+id/registerCitizen_btn"
             android:layout_width="131dp"
-            android:layout_height="36dp"
+            android:layout_height="51dp"
             android:layout_marginStart="55dp"
             android:layout_marginBottom="8dp"
             android:ems="10"
@@ -175,10 +116,10 @@
             app:layout_constraintStart_toStartOf="parent" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName6"
-            android:layout_width="133dp"
-            android:layout_height="35dp"
-            android:layout_marginEnd="55dp"
+            android:id="@+id/registerVisitor_btn"
+            android:layout_width="134dp"
+            android:layout_height="51dp"
+            android:layout_marginEnd="40dp"
             android:layout_marginBottom="8dp"
             android:ems="10"
             android:inputType="textPersonName"
@@ -189,45 +130,46 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="113dp"
+            android:layout_marginTop="61dp"
+            android:layout_marginEnd="113dp"
+            android:text="Do not have any account yet? "
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/forgotPass_btn" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="43dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginEnd="43dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/username" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="57dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:backgroundTint="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
-
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="30dp"
-        android:text="Password : "
-        android:textColor="#FFFFFF"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView12" />
-
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="116dp"
-        android:layout_marginEnd="116dp"
-        android:text="Do not have any account yet? "
-        android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="661dp" />
-
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/logo_loginPage"
         android:layout_width="179dp"
         android:layout_height="199dp"
         android:layout_marginStart="116dp"
@@ -237,48 +179,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/maskon" />
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="158dp"
-        android:layout_marginTop="37dp"
-        android:layout_marginEnd="159dp"
-        android:backgroundTint="#45b610"
-        android:text="Button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName3"
-        android:layout_width="131dp"
-        android:layout_height="36dp"
-        android:layout_marginStart="55dp"
-        android:layout_marginBottom="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Register as CITIZEN"
-        android:textColor="#45B610"
-        android:textSize="14sp"
-        app:backgroundTint="#45B610"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName4"
-        android:layout_width="133dp"
-        android:layout_height="35dp"
-        android:layout_marginEnd="55dp"
-        android:layout_marginBottom="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Register as VISITOR"
-        android:textColor="#45B610"
-        android:textSize="14sp"
-        app:backgroundTint="#45B610"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
