@@ -91,13 +91,13 @@
                         android:textColor="@color/white" />
 
                     <EditText
+                        android:id="@+id/name_id"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Ali bin Ahmad"
-                        android:layout_marginBottom="20dp"
-                        android:padding="5dp"
                         android:layout_marginTop="10dp"
-                        />
+                        android:layout_marginBottom="20dp"
+                        android:hint="Ali bin Ahmad"
+                        android:padding="5dp" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -106,13 +106,13 @@
                         android:textColor="@color/white" />
 
                     <EditText
+                        android:id="@+id/phone_id"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:hint="0103239756"
                         android:layout_marginBottom="20dp"
-                        android:padding="5dp"
-                        />
+                        android:hint="0103239756"
+                        android:padding="5dp" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -121,13 +121,13 @@
                         android:textColor="@color/white" />
 
                     <EditText
+                        android:id="@+id/ic_id"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="931217-01-1937"
-                        android:layout_marginBottom="20dp"
-                        android:padding="5dp"
                         android:layout_marginTop="10dp"
-                        />
+                        android:layout_marginBottom="20dp"
+                        android:hint="931217-01-1937"
+                        android:padding="5dp" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -136,13 +136,13 @@
                         android:textColor="@color/white" />
 
                     <EditText
+                        android:id="@+id/address_id"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="1-6 Taman Bukit Permai 2, Hulu Langat 56100 Selangor"
-                        android:layout_marginBottom="20dp"
-                        android:padding="5dp"
                         android:layout_marginTop="10dp"
-                        />
+                        android:layout_marginBottom="20dp"
+                        android:hint="1-6 Taman Bukit Permai 2, Hulu Langat 56100 Selangor"
+                        android:padding="5dp" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -155,20 +155,20 @@
                         android:layout_height="wrap_content">
 
                         <RadioButton
+                            android:id="@+id/positive_id"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Positive"
-                            android:textColor="@color/white"
                             android:buttonTint="@color/white"
-                            />
+                            android:text="Positive"
+                            android:textColor="@color/white" />
 
                         <RadioButton
+                            android:id="@+id/negative_id"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Negative"
-                            android:textColor="@color/white"
                             android:buttonTint="@color/white"
-                            />
+                            android:text="Negative"
+                            android:textColor="@color/white" />
 
                     </RadioGroup>
 
@@ -195,10 +195,12 @@
 
 
                 <LinearLayout
+                    android:id="@+id/place_id"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
                     android:paddingLeft="15dp">
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -206,51 +208,48 @@
                         android:textColor="@color/white" />
 
                     <EditText
+                        android:id="@+id/start_id"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="20dp"
-                        android:inputType="date"
-                        android:drawableRight="@drawable/calendar_vec"
-                        android:padding="5dp"
                         android:layout_marginTop="10dp"
-                        />
+                        android:layout_marginBottom="20dp"
+                        android:drawableRight="@drawable/calendar_vec"
+                        android:inputType="date"
+                        android:padding="5dp" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Date End of Quarantine"
-                        android:textColor="@color/white"
-                        />
+                        android:textColor="@color/white" />
 
                     <EditText
+                        android:id="@+id/end_id"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="20dp"
-                        android:inputType="date"
-                        android:drawableRight="@drawable/calendar_vec"
-                        android:padding="5dp"
                         android:layout_marginTop="10dp"
-                        />
+                        android:layout_marginBottom="20dp"
+                        android:drawableRight="@drawable/calendar_vec"
+                        android:inputType="date"
+                        android:padding="5dp" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
                         android:text="Quarantine Place"
-                        android:textColor="@color/white"
-                        android:layout_marginBottom="10dp"/>
+                        android:textColor="@color/white" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/white"
                         android:layout_marginBottom="15dp"
-                        >
+                        android:background="@color/white">
+
                         <Spinner
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
                             android:id="@+id/dropdownLocation"
-                            >
-                        </Spinner>
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"></Spinner>
                     </LinearLayout>
                 </LinearLayout>
 
