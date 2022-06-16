@@ -32,7 +32,7 @@ android {
     sourceSets {
         main {
             res {
-                srcDirs 'src\\main\\res', 'src\\main\\res\\layouts\\registration', 'src\\main\\res\\layouts\\movement', 'src\\main\\res\\layouts\\vaccine', 'src\\main\\res\\layouts\\QuarantineRecord', 'src\\main\\res\\layouts\\information', 'src\\main\\res\\layouts\\QuarantineCenter', 'src\\main\\res\\layouts\\dependent', 'src\\main\\res\\layouts\\CenterView\\layout', 'src\\main\\res\\layouts\\CenteView', 'src\\main\\res\\layouts\\CenterView', 'src\\main\\res\\layouts\\LoginView', 'src\\main\\res\\layouts\\InformationView', 'src\\main\\res\\layouts\\InformationView\\layout', 'src\\main\\res\\layouts\\MovementView\\layout', 'src\\main\\res\\layouts\\MovementView'
+                srcDirs 'src\\main\\res', 'src\\main\\res\\layouts\\registration', 'src\\main\\res\\layouts\\movement', 'src\\main\\res\\layouts\\vaccine', 'src\\main\\res\\layouts\\QuarantineRecord', 'src\\main\\res\\layouts\\information', 'src\\main\\res\\layouts\\QuarantineCenter', 'src\\main\\res\\layouts\\dependent', 'src\\main\\res\\layouts\\CenterView\\layout', 'src\\main\\res\\layouts\\CenteView', 'src\\main\\res\\layouts\\CenterView', 'src\\main\\res\\layouts\\LoginView', 'src\\main\\res\\layouts\\InformationView', 'src\\main\\res\\layouts\\InformationView\\layout', 'src\\main\\res\\layouts\\MovementView\\layout', 'src\\main\\res\\layouts\\Movement'
             }
         }
     }
@@ -51,4 +51,5 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    implementation 'com.github.yuriy-budiyev:code-scanner:2.3.2'
 }

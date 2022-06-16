@@ -5,5 +5,14 @@ dependencyResolutionManagement {
         mavenCentral()// Warning: this repository is going to shut down soon
     }
 }
+
+dependencyResolutionManagement {
+
+    repositories {
+
+        maven { url 'https://jitpack.io' }
+    }
+}
+
 rootProject.name = "Maskon"
 include ':app'
