@@ -16,7 +16,7 @@
             android:name=".registered"
             android:exported="false" />
         <activity
-            android:name=".view.VaccineView.VaccineRegistration"
+            android:name=".controller.VaccineManagement.VaccineRegistration"
             android:exported="false"
             android:label="@string/title_activity_vaccine_registration" />
         <activity

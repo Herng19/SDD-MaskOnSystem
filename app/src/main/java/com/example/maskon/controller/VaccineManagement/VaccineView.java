@@ -1,4 +1,4 @@
-package com.example.maskon.view.VaccineView;
+package com.example.maskon.controller.VaccineManagement;
 
 import androidx.appcompat.app.AppCompatActivity;
 
